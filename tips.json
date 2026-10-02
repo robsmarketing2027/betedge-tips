@@ -1,0 +1,142 @@
+{
+  "date": "2026-10-02",
+  "snapshot": "2026-10-02T19:30:00+02:00",
+  "sources": {
+    "wsb": { "name": "World Sports Betting", "url": "https://sportsnews.worldsportsbetting.co.za/sports/soccer/international-football/uefa-nations-league-betting-preview-saturday-3rd-october/" },
+    "fox": { "name": "FOX Sports", "url": "https://www.foxsports.com/stories/nfl/2026-nfl-odds-week-4-lines-spreads-results-all-16-games" },
+    "cbs": { "name": "CBS Sports / SportsLine", "url": "https://www.cbssports.com/betting/news/week-4-2026-nfl-odds-picks-predictions-bets/" },
+    "dimers": { "name": "Dimers", "url": "https://www.dimers.com/tennis/predictions" },
+    "wagertalk": { "name": "WagerTalk", "url": "https://www.wagertalk.com/news/mma/ufc-332-silva-vs-wang-predictions-picks-and-betting-odds-october-3/" },
+    "coversUfc": { "name": "Covers (Kalshi)", "url": "https://covers.com/ufc/332-odds-saturday-oct-3-2026" },
+    "mtNed": { "name": "MightyTips", "url": "https://www.mightytips.com/football-predictions/netherlands-vs-serbia-prediction-04-10-2026/" },
+    "mtSui": { "name": "MightyTips", "url": "https://www.mightytips.com/football-predictions/switzerland-vs-slovenia-prediction-03-10-2026/" },
+    "mtIsl": { "name": "MightyTips", "url": "https://www.mightytips.com/football-predictions/iceland-vs-bulgaria-prediction-03-10-2026/" },
+    "mtPor": { "name": "MightyTips", "url": "https://www.mightytips.com/football-predictions/portugal-vs-norway-prediction-04-10-2026/" },
+    "espnNl": { "name": "ESPN", "url": "https://www.espn.com/soccer/schedule/_/league/uefa.nations" },
+    "coversMlb": { "name": "Covers", "url": "https://www.covers.com/mlb/padres-vs-brewers-prediction-picks-odds-saturday-10-3-2026" },
+    "espnMlb": { "name": "ESPN (DraftKings)", "url": "https://www.espn.com/mlb/odds/_/gameId/401908007" },
+    "sbd": { "name": "Sports Betting Dime", "url": "https://www.sportsbettingdime.com/news/mlb/dodgers-vs-braves-odds-schedule-picks-for-nlds-2026/" }
+  },
+  "tips": [
+    {
+      "sport": "Foci", "league": "Nemzetek Ligája A", "event": "Spanyolország – Csehország",
+      "pick": "Spanyolország nyer", "start": "2026-10-03T20:45:00+02:00",
+      "odds": 1.08, "prob": 0.895, "probSrc": "piaci, árrés nélkül", "asOf": "okt. 1.", "sources": ["wsb", "espnNl"],
+      "why": "A spanyolok mindkét meccsüket megnyerték (3–2 Anglia, 4–1 Horvátország ellen, Yamal duplájával), a csehek mindkettőt elvesztették. A legnagyobb esélyű tipp a listán, de a szorzó nagyon alacsony."
+    },
+    {
+      "sport": "NFL", "league": "4. hét", "event": "Baltimore Ravens – Tennessee Titans",
+      "pick": "Ravens nyer", "start": "2026-10-04T19:00:00+02:00",
+      "odds": 1.14, "prob": 0.84, "probSrc": "piaci, árrés nélkül", "asOf": "okt. 1.", "sources": ["fox"],
+      "why": "A forduló legnagyobb favoritja: 11,5 pontos hendikep hazai pályán (−700 / +500)."
+    },
+    {
+      "sport": "NFL", "league": "4. hét", "event": "Minnesota Vikings – Miami Dolphins",
+      "pick": "Vikings nyer", "start": "2026-10-04T22:05:00+02:00",
+      "odds": 1.15, "prob": 0.833, "probSrc": "piaci, árrés nélkül", "asOf": "okt. 1.", "sources": ["fox"],
+      "why": "A forduló második legnagyobb favoritja, 10,5 pontos hendikeppel otthon (−650 / +475); a pontvonal alacsony, 38,5."
+    },
+    {
+      "sport": "Tenisz", "league": "ATP China Open, Peking", "event": "Danyiil Medvegyev – Jan-Lennard Struff",
+      "pick": "Medvegyev nyer", "start": "2026-10-03T11:00:00+02:00", "approx": true,
+      "odds": 1.16, "prob": 0.826, "probSrc": "Dimers modell", "asOf": "okt. 2.", "sources": ["dimers"],
+      "why": "A torna egyik fő esélyese (Sinner visszalépett, Alcaraz Tokióban játszik); a modell 82,6%-ot ad neki."
+    },
+    {
+      "sport": "UFC", "league": "UFC 332, Salt Lake City", "event": "Payton Talbott – Deiveson Figueiredo",
+      "pick": "Talbott nyer", "start": "2026-10-04T02:00:00+02:00", "approx": true, "timeNote": "főkártya kezdete",
+      "odds": 1.20, "prob": 0.815, "probSrc": "piaci, árrés nélkül", "asOf": "okt. 1.", "sources": ["wagertalk", "coversUfc"],
+      "why": "A 38 éves Figueiredo már veszített az erejéből és a gyorsaságából, Talbott aktívabb és pontosabban üt. A Kalshi piacán 85%-on áll (okt. 2.)."
+    },
+    {
+      "sport": "Foci", "league": "Nemzetek Ligája A", "event": "Hollandia – Szerbia",
+      "pick": "Hollandia nyer", "start": "2026-10-04T20:45:00+02:00",
+      "odds": 1.19, "prob": 0.811, "probSrc": "piaci, árrés nélkül", "asOf": "okt. 2.", "sources": ["mtNed", "espnNl"],
+      "why": "Szerbia mindhárom meccsét elvesztette (2–6-os gólkülönbség), az utolsó öt meccsén 14 gólt kapott. Hollandia veretlen a csoportban, meccsenként 2,35 xG-t termel Szerbia 0,88-ával szemben."
+    },
+    {
+      "sport": "Tenisz", "league": "WTA China Open, Peking", "event": "Arina Szabalenka – Nikola Bartůňková",
+      "pick": "Szabalenka nyer", "start": "2026-10-04T05:00:00+02:00", "approx": true,
+      "odds": 1.20, "prob": 0.792, "probSrc": "Dimers modell", "asOf": "okt. 2.", "sources": ["dimers"],
+      "why": "A női torna fő esélyese a fogadóirodáknál; erre a meccsre a modell 79,2%-ot ad neki."
+    },
+    {
+      "sport": "Tenisz", "league": "WTA China Open, Peking", "event": "Elina Szvitolina – Kateřina Siniaková",
+      "pick": "Szvitolina nyer", "start": "2026-10-03T06:10:00+02:00", "approx": true,
+      "odds": 1.28, "prob": 0.763, "probSrc": "Dimers modell", "asOf": "okt. 2.", "sources": ["dimers"],
+      "why": "A modell 76,3%-ot ad Szvitolinának. Szombat hajnali meccs: péntek este kell megtenni."
+    },
+    {
+      "sport": "Tenisz", "league": "WTA China Open, Peking", "event": "Karolína Muchová – Ljudmila Szamszonova",
+      "pick": "Muchová nyer", "start": "2026-10-04T05:00:00+02:00", "approx": true,
+      "odds": 1.28, "prob": 0.763, "probSrc": "Dimers modell", "asOf": "okt. 2.", "sources": ["dimers"],
+      "why": "A modell 76,3%-ot ad Muchovának; a szorzó a fogadóirodáknál 1,28 körül van."
+    },
+    {
+      "sport": "NFL", "league": "4. hét", "event": "Seattle Seahawks – Los Angeles Chargers",
+      "pick": "Seahawks nyer", "start": "2026-10-04T22:25:00+02:00",
+      "odds": 1.29, "prob": 0.741, "probSrc": "piaci, árrés nélkül", "asOf": "okt. 1.", "sources": ["fox", "cbs"],
+      "why": "Hétpontos hazai favorit. A SportsLine modellje szerint a Seahawks a szimulációk közel 60%-ában a −7-es hendikepet is hozza, vagyis a sima győzelem ennél valószínűbb."
+    },
+    {
+      "sport": "Tenisz", "league": "WTA China Open, Peking", "event": "Naomi Oszaka – Sára Bejlek",
+      "pick": "Oszaka nyer", "start": "2026-10-04T05:00:00+02:00", "approx": true,
+      "odds": 1.30, "prob": 0.732, "probSrc": "Dimers modell", "asOf": "okt. 2.", "sources": ["dimers"],
+      "why": "A modell 73,2%-ot ad Oszakának. Csak akkor érvényes, ha a pénteki meccsét megnyerte és ez a párosítás létrejön."
+    },
+    {
+      "sport": "Tenisz", "league": "WTA China Open, Peking", "event": "Maria Szakkari – Storm Hunter",
+      "pick": "Szakkari nyer", "start": "2026-10-03T06:10:00+02:00", "approx": true,
+      "odds": 1.42, "prob": 0.73, "probSrc": "Dimers modell", "asOf": "okt. 2.", "sources": ["dimers"],
+      "why": "Az egyetlen tipp, ahol a referencia-szorzó (1,42) a modell esélyéhez (73%) képest értéket mutat. Szombat hajnali meccs: péntek este kell megtenni."
+    },
+    {
+      "sport": "Foci", "league": "Nemzetek Ligája B", "event": "Svájc – Szlovénia",
+      "pick": "Svájc nyer", "start": "2026-10-03T20:45:00+02:00",
+      "odds": 1.34, "prob": 0.725, "probSrc": "piaci, árrés nélkül", "asOf": "okt. 2.", "sources": ["mtSui", "espnNl"],
+      "why": "Svájc két meccs után hibátlan, 6–0-s gólkülönbséggel (legutóbb 3–0 Skócia ellen). Kockázat: öt hiányzó, köztük Xhaka és Embolo; Szlovénia Šeško nélkül, de két meccse kapott gól nélkül áll."
+    },
+    {
+      "sport": "NFL", "league": "4. hét", "event": "Buffalo Bills – New England Patriots",
+      "pick": "Bills nyer", "start": "2026-10-04T19:00:00+02:00",
+      "odds": 1.33, "prob": 0.718, "probSrc": "piaci, árrés nélkül", "asOf": "okt. 1.", "sources": ["fox", "cbs"],
+      "why": "Hazai favorit 6,5–7 pontos hendikeppel a csoportrivális ellen (−300 / +240)."
+    },
+    {
+      "sport": "Foci", "league": "Nemzetek Ligája C", "event": "Izland – Bulgária",
+      "pick": "Izland nyer", "start": "2026-10-03T18:00:00+02:00",
+      "odds": 1.46, "prob": 0.665, "probSrc": "piaci, árrés nélkül", "asOf": "okt. 2.", "sources": ["mtIsl", "espnNl"],
+      "why": "Bulgária az utolsó négy idegenbeli meccsét elvesztette (1 rúgott, 11 kapott gól), a kapitánya most mondott le. Kockázat: Izland még sosem verte meg Bulgáriát, és az utolsó hét hazai tétmeccséből csak egyet nyert meg."
+    },
+    {
+      "sport": "Foci", "league": "Nemzetek Ligája A", "event": "Olaszország – Törökország",
+      "pick": "Olaszország nyer", "start": "2026-10-05T20:45:00+02:00",
+      "odds": 1.45, "prob": 0.66, "probSrc": "piaci, becsült árrés nélkül", "asOf": "okt. 2.", "sources": ["espnNl"],
+      "why": "Hazai favorit Bolognában (−220). Korai ár: mindkét csapat játszik péntek este is, a szorzó a sérülések és a rotáció miatt hétfőig változhat – fogadás előtt nézd meg újra."
+    },
+    {
+      "sport": "NFL", "league": "4. hét", "event": "Las Vegas Raiders – Kansas City Chiefs",
+      "pick": "Chiefs nyer", "start": "2026-10-04T22:25:00+02:00",
+      "odds": 1.45, "prob": 0.658, "probSrc": "piaci, árrés nélkül", "asOf": "okt. 1.", "sources": ["fox"],
+      "why": "Idegenbeli favorit 4,5 pontos hendikeppel a csoportrivális ellen (−220 / +180)."
+    },
+    {
+      "sport": "MLB", "league": "NLDS, 1. meccs", "event": "Milwaukee Brewers – San Diego Padres",
+      "pick": "Brewers nyer", "start": "2026-10-04T02:30:00+02:00",
+      "odds": 1.50, "prob": 0.639, "probSrc": "piaci, árrés nélkül", "asOf": "okt. 2.", "sources": ["coversMlb"],
+      "why": "Jacob Misiorowski dob (16–5, 1,80 ERA), a Padres kezdője még nem ismert, a Brewers pihenten, hazai pályán kezd. Más irodáknál 1,44 körül van, ott már nem éri meg."
+    },
+    {
+      "sport": "MLB", "league": "NLDS, 1. meccs", "event": "Los Angeles Dodgers – Atlanta Braves",
+      "pick": "Dodgers nyer", "start": "2026-10-03T22:00:00+02:00",
+      "odds": 1.58, "prob": 0.62, "probSrc": "ESPN Analytics", "asOf": "okt. 2.", "sources": ["espnMlb", "sbd"],
+      "why": "100 győzelmes alapszakasz, otthon 51–30, pihent kezdődobókkal; a Braves három wild card meccsen használta el a dobóit, Chris Sale is beszállt csereként."
+    },
+    {
+      "sport": "Foci", "league": "Nemzetek Ligája A", "event": "Portugália – Norvégia",
+      "pick": "Portugália nyer", "start": "2026-10-04T20:45:00+02:00",
+      "odds": 1.66, "prob": 0.585, "probSrc": "piaci, árrés nélkül", "asOf": "okt. 2.", "sources": ["mtPor", "espnNl"],
+      "why": "Portugália három meccsből három győzelemmel vezeti a csoportot (legutóbb 4–2 Dániában), Norvégia kétszer kikapott, Heggem eltiltott, Ødegaard kérdéses. Kockázat: Ronaldo játéka bizonytalan, Haaland bármikor betalálhat – a lista legkisebb esélyű tippje."
+    }
+  ]
+}
