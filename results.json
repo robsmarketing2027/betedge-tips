@@ -1,24 +1,144 @@
 {
-  "updated": "2026-10-07T13:45:00+02:00",
-  "sources": {},
-  "results": [
-    {
-      "id": "2026-10-03|Szvitolina nyer",
-      "tipDate": "2026-10-02",
-      "sport": "Tenisz",
-      "league": "WTA China Open, Peking",
-      "event": "Elina Szvitolina – Kateřina Siniaková",
-      "pick": "Szvitolina nyer",
-      "start": "2026-10-03T06:10:00+02:00",
-      "odds": 1.28,
-      "prob": 0.763,
-      "probSrc": "Dimers modell",
-      "status": "pending",
-      "score": "",
-      "note": "",
-      "settled": "",
-      "resultSources": []
+  "updated": "2026-10-07T13:35:00+02:00",
+  "sources": {
+    "te1003": {
+      "name": "Tennis Explorer, okt. 3.",
+      "url": "https://www.tennisexplorer.com/matches/?type=all&year=2026&month=10&day=03"
     },
+    "te1004": {
+      "name": "Tennis Explorer, okt. 4.",
+      "url": "https://www.tennisexplorer.com/matches/?type=all&year=2026&month=10&day=04"
+    },
+    "te1005": {
+      "name": "Tennis Explorer, okt. 5.",
+      "url": "https://www.tennisexplorer.com/matches/?type=all&year=2026&month=10&day=05"
+    },
+    "te1006": {
+      "name": "Tennis Explorer, okt. 6.",
+      "url": "https://www.tennisexplorer.com/matches/?type=all&year=2026&month=10&day=06"
+    },
+    "te1007": {
+      "name": "Tennis Explorer, okt. 7.",
+      "url": "https://www.tennisexplorer.com/matches/?type=all&year=2026&month=10&day=07"
+    },
+    "espnUfc332": {
+      "name": "ESPN Fightcenter, UFC 332",
+      "url": "https://www.espn.com/mma/fightcenter/_/id/600061182/league/ufc"
+    },
+    "espn401861112": {
+      "name": "ESPN mérkőzés: Izland – Bulgária",
+      "url": "https://www.espn.com/soccer/match/_/gameId/401861112"
+    },
+    "espn401861118": {
+      "name": "ESPN mérkőzés: Spanyolország – Csehország",
+      "url": "https://www.espn.com/soccer/match/_/gameId/401861118"
+    },
+    "espn401861117": {
+      "name": "ESPN mérkőzés: Svájc – Szlovénia",
+      "url": "https://www.espn.com/soccer/match/_/gameId/401861117"
+    },
+    "espn401908007": {
+      "name": "ESPN MLB: Los Angeles Dodgers – Atlanta Braves",
+      "url": "https://www.espn.com/mlb/game/_/gameId/401908007"
+    },
+    "espn401908002": {
+      "name": "ESPN MLB: Milwaukee Brewers – San Diego Padres",
+      "url": "https://www.espn.com/mlb/game/_/gameId/401908002"
+    },
+    "espn401872973": {
+      "name": "ESPN NFL: Baltimore Ravens – Tennessee Titans",
+      "url": "https://www.espn.com/nfl/game/_/gameId/401872973"
+    },
+    "espn401872971": {
+      "name": "ESPN NFL: Buffalo Bills – New England Patriots",
+      "url": "https://www.espn.com/nfl/game/_/gameId/401872971"
+    },
+    "espn401861122": {
+      "name": "ESPN mérkőzés: Hollandia – Szerbia",
+      "url": "https://www.espn.com/soccer/match/_/gameId/401861122"
+    },
+    "espn401861126": {
+      "name": "ESPN mérkőzés: Portugália – Norvégia",
+      "url": "https://www.espn.com/soccer/match/_/gameId/401861126"
+    },
+    "espn401872974": {
+      "name": "ESPN NFL: Minnesota Vikings – Miami Dolphins",
+      "url": "https://www.espn.com/nfl/game/_/gameId/401872974"
+    },
+    "espn401872977": {
+      "name": "ESPN NFL: Seattle Seahawks – Los Angeles Chargers",
+      "url": "https://www.espn.com/nfl/game/_/gameId/401872977"
+    },
+    "espn401872976": {
+      "name": "ESPN NFL: Las Vegas Raiders – Kansas City Chiefs",
+      "url": "https://www.espn.com/nfl/game/_/gameId/401872976"
+    },
+    "espn401861131": {
+      "name": "ESPN mérkőzés: Olaszország – Törökország",
+      "url": "https://www.espn.com/soccer/match/_/gameId/401861131"
+    },
+    "espn401861129": {
+      "name": "ESPN mérkőzés: Franciaország – Belgium",
+      "url": "https://www.espn.com/soccer/match/_/gameId/401861129"
+    },
+    "espn401892445": {
+      "name": "ESPN NHL: Tampa Bay Lightning – Philadelphia Flyers",
+      "url": "https://www.espn.com/nhl/game/_/gameId/401892445"
+    },
+    "espn401892447": {
+      "name": "ESPN NHL: Pittsburgh Penguins – Winnipeg Jets",
+      "url": "https://www.espn.com/nhl/game/_/gameId/401892447"
+    },
+    "espn401907986": {
+      "name": "ESPN MLB: Tampa Bay Rays – New York Yankees",
+      "url": "https://www.espn.com/mlb/game/_/gameId/401907986"
+    },
+    "espn401892448": {
+      "name": "ESPN NHL: Dallas Stars – San Jose Sharks",
+      "url": "https://www.espn.com/nhl/game/_/gameId/401892448"
+    },
+    "espn401917261": {
+      "name": "ESPN mérkőzés: Algéria – Niger",
+      "url": "https://www.espn.com/soccer/match/_/gameId/401917261"
+    },
+    "espn401861139": {
+      "name": "ESPN mérkőzés: Svájc – Észak-Macedónia",
+      "url": "https://www.espn.com/soccer/match/_/gameId/401861139"
+    },
+    "espn401861142": {
+      "name": "ESPN mérkőzés: Anglia – Csehország",
+      "url": "https://www.espn.com/soccer/match/_/gameId/401861142"
+    },
+    "espn401861137": {
+      "name": "ESPN mérkőzés: Horvátország – Spanyolország",
+      "url": "https://www.espn.com/soccer/match/_/gameId/401861137"
+    },
+    "espn401861144": {
+      "name": "ESPN mérkőzés: Moldova – Szlovákia",
+      "url": "https://www.espn.com/soccer/match/_/gameId/401861144"
+    },
+    "espn401919990": {
+      "name": "ESPN mérkőzés: Angola – Malawi",
+      "url": "https://www.espn.com/soccer/match/_/gameId/401919990"
+    },
+    "espn401905332": {
+      "name": "ESPN mérkőzés: Kolumbia – Peru",
+      "url": "https://www.espn.com/soccer/match/_/gameId/401905332"
+    },
+    "espn401871090": {
+      "name": "ESPN NCAA: Troy Trojans – Southern Miss Golden Eagles",
+      "url": "https://www.espn.com/college-football/game/_/gameId/401871090"
+    },
+    "espn401892454": {
+      "name": "ESPN NHL: Seattle Kraken – Vegas Golden Knights",
+      "url": "https://www.espn.com/nhl/game/_/gameId/401892454"
+    },
+    "espn401908004": {
+      "name": "ESPN MLB: San Diego Padres – Milwaukee Brewers",
+      "url": "https://www.espn.com/mlb/game/_/gameId/401908004"
+    }
+  },
+  "results": [
     {
       "id": "2026-10-03|Szakkari nyer",
       "tipDate": "2026-10-02",
@@ -30,11 +150,32 @@
       "odds": 1.42,
       "prob": 0.73,
       "probSrc": "Dimers modell",
-      "status": "pending",
-      "score": "",
+      "status": "won",
+      "score": "6–2, 6–2",
       "note": "",
-      "settled": "",
-      "resultSources": []
+      "settled": "2026-10-07",
+      "resultSources": [
+        "te1003"
+      ]
+    },
+    {
+      "id": "2026-10-03|Szvitolina nyer",
+      "tipDate": "2026-10-02",
+      "sport": "Tenisz",
+      "league": "WTA China Open, Peking",
+      "event": "Elina Szvitolina – Kateřina Siniaková",
+      "pick": "Szvitolina nyer",
+      "start": "2026-10-03T06:10:00+02:00",
+      "odds": 1.28,
+      "prob": 0.763,
+      "probSrc": "Dimers modell",
+      "status": "won",
+      "score": "1–6, 6–4, 6–2",
+      "note": "",
+      "settled": "2026-10-07",
+      "resultSources": [
+        "te1003"
+      ]
     },
     {
       "id": "2026-10-03|Medvegyev nyer",
@@ -47,11 +188,13 @@
       "odds": 1.16,
       "prob": 0.826,
       "probSrc": "Dimers modell",
-      "status": "pending",
-      "score": "",
+      "status": "won",
+      "score": "6–4, 6–3",
       "note": "",
-      "settled": "",
-      "resultSources": []
+      "settled": "2026-10-07",
+      "resultSources": [
+        "te1003"
+      ]
     },
     {
       "id": "2026-10-03|Izland nyer",
@@ -64,11 +207,13 @@
       "odds": 1.46,
       "prob": 0.665,
       "probSrc": "piaci, árrés nélkül",
-      "status": "pending",
-      "score": "",
+      "status": "won",
+      "score": "3–0",
       "note": "",
-      "settled": "",
-      "resultSources": []
+      "settled": "2026-10-07",
+      "resultSources": [
+        "espn401861112"
+      ]
     },
     {
       "id": "2026-10-03|Spanyolország nyer",
@@ -81,11 +226,13 @@
       "odds": 1.08,
       "prob": 0.895,
       "probSrc": "piaci, árrés nélkül",
-      "status": "pending",
-      "score": "",
+      "status": "won",
+      "score": "3–1",
       "note": "",
-      "settled": "",
-      "resultSources": []
+      "settled": "2026-10-07",
+      "resultSources": [
+        "espn401861118"
+      ]
     },
     {
       "id": "2026-10-03|Svájc nyer",
@@ -98,11 +245,13 @@
       "odds": 1.34,
       "prob": 0.725,
       "probSrc": "piaci, árrés nélkül",
-      "status": "pending",
-      "score": "",
+      "status": "won",
+      "score": "2–1",
       "note": "",
-      "settled": "",
-      "resultSources": []
+      "settled": "2026-10-07",
+      "resultSources": [
+        "espn401861117"
+      ]
     },
     {
       "id": "2026-10-03|Dodgers nyer",
@@ -115,11 +264,13 @@
       "odds": 1.58,
       "prob": 0.62,
       "probSrc": "ESPN Analytics",
-      "status": "pending",
-      "score": "",
+      "status": "won",
+      "score": "5–3",
       "note": "",
-      "settled": "",
-      "resultSources": []
+      "settled": "2026-10-07",
+      "resultSources": [
+        "espn401908007"
+      ]
     },
     {
       "id": "2026-10-04|Talbott nyer",
@@ -132,11 +283,13 @@
       "odds": 1.2,
       "prob": 0.815,
       "probSrc": "piaci, árrés nélkül",
-      "status": "pending",
-      "score": "",
+      "status": "won",
+      "score": "TKO, 1. menet",
       "note": "",
-      "settled": "",
-      "resultSources": []
+      "settled": "2026-10-07",
+      "resultSources": [
+        "espnUfc332"
+      ]
     },
     {
       "id": "2026-10-04|Brewers nyer",
@@ -149,28 +302,13 @@
       "odds": 1.5,
       "prob": 0.639,
       "probSrc": "piaci, árrés nélkül",
-      "status": "pending",
-      "score": "",
+      "status": "won",
+      "score": "3–2",
       "note": "",
-      "settled": "",
-      "resultSources": []
-    },
-    {
-      "id": "2026-10-04|Szabalenka nyer",
-      "tipDate": "2026-10-02",
-      "sport": "Tenisz",
-      "league": "WTA China Open, Peking",
-      "event": "Arina Szabalenka – Nikola Bartůňková",
-      "pick": "Szabalenka nyer",
-      "start": "2026-10-04T05:00:00+02:00",
-      "odds": 1.2,
-      "prob": 0.792,
-      "probSrc": "Dimers modell",
-      "status": "pending",
-      "score": "",
-      "note": "",
-      "settled": "",
-      "resultSources": []
+      "settled": "2026-10-07",
+      "resultSources": [
+        "espn401908002"
+      ]
     },
     {
       "id": "2026-10-04|Muchová nyer",
@@ -183,11 +321,13 @@
       "odds": 1.28,
       "prob": 0.763,
       "probSrc": "Dimers modell",
-      "status": "pending",
-      "score": "",
+      "status": "won",
+      "score": "4–6, 6–4, 6–2",
       "note": "",
-      "settled": "",
-      "resultSources": []
+      "settled": "2026-10-07",
+      "resultSources": [
+        "te1004"
+      ]
     },
     {
       "id": "2026-10-04|Oszaka nyer",
@@ -200,28 +340,32 @@
       "odds": 1.3,
       "prob": 0.732,
       "probSrc": "Dimers modell",
-      "status": "pending",
-      "score": "",
+      "status": "won",
+      "score": "7–6, 6–4",
       "note": "",
-      "settled": "",
-      "resultSources": []
+      "settled": "2026-10-07",
+      "resultSources": [
+        "te1004"
+      ]
     },
     {
-      "id": "2026-10-04|Ravens nyer",
+      "id": "2026-10-04|Szabalenka nyer",
       "tipDate": "2026-10-02",
-      "sport": "NFL",
-      "league": "4. hét",
-      "event": "Baltimore Ravens – Tennessee Titans",
-      "pick": "Ravens nyer",
-      "start": "2026-10-04T19:00:00+02:00",
-      "odds": 1.14,
-      "prob": 0.84,
-      "probSrc": "piaci, árrés nélkül",
-      "status": "pending",
-      "score": "",
+      "sport": "Tenisz",
+      "league": "WTA China Open, Peking",
+      "event": "Arina Szabalenka – Nikola Bartůňková",
+      "pick": "Szabalenka nyer",
+      "start": "2026-10-04T05:00:00+02:00",
+      "odds": 1.2,
+      "prob": 0.792,
+      "probSrc": "Dimers modell",
+      "status": "lost",
+      "score": "4–6, 3–6",
       "note": "",
-      "settled": "",
-      "resultSources": []
+      "settled": "2026-10-07",
+      "resultSources": [
+        "te1004"
+      ]
     },
     {
       "id": "2026-10-04|Bills nyer",
@@ -234,11 +378,32 @@
       "odds": 1.33,
       "prob": 0.718,
       "probSrc": "piaci, árrés nélkül",
-      "status": "pending",
-      "score": "",
+      "status": "lost",
+      "score": "26–29",
       "note": "",
-      "settled": "",
-      "resultSources": []
+      "settled": "2026-10-07",
+      "resultSources": [
+        "espn401872971"
+      ]
+    },
+    {
+      "id": "2026-10-04|Ravens nyer",
+      "tipDate": "2026-10-02",
+      "sport": "NFL",
+      "league": "4. hét",
+      "event": "Baltimore Ravens – Tennessee Titans",
+      "pick": "Ravens nyer",
+      "start": "2026-10-04T19:00:00+02:00",
+      "odds": 1.14,
+      "prob": 0.84,
+      "probSrc": "piaci, árrés nélkül",
+      "status": "won",
+      "score": "24–18",
+      "note": "",
+      "settled": "2026-10-07",
+      "resultSources": [
+        "espn401872973"
+      ]
     },
     {
       "id": "2026-10-04|Hollandia nyer",
@@ -251,11 +416,13 @@
       "odds": 1.19,
       "prob": 0.811,
       "probSrc": "piaci, árrés nélkül",
-      "status": "pending",
-      "score": "",
+      "status": "won",
+      "score": "2–1",
       "note": "",
-      "settled": "",
-      "resultSources": []
+      "settled": "2026-10-07",
+      "resultSources": [
+        "espn401861122"
+      ]
     },
     {
       "id": "2026-10-04|Portugália nyer",
@@ -268,11 +435,13 @@
       "odds": 1.66,
       "prob": 0.585,
       "probSrc": "piaci, árrés nélkül",
-      "status": "pending",
-      "score": "",
+      "status": "won",
+      "score": "2–1",
       "note": "",
-      "settled": "",
-      "resultSources": []
+      "settled": "2026-10-07",
+      "resultSources": [
+        "espn401861126"
+      ]
     },
     {
       "id": "2026-10-04|Vikings nyer",
@@ -285,28 +454,13 @@
       "odds": 1.15,
       "prob": 0.833,
       "probSrc": "piaci, árrés nélkül",
-      "status": "pending",
-      "score": "",
+      "status": "won",
+      "score": "15–10",
       "note": "",
-      "settled": "",
-      "resultSources": []
-    },
-    {
-      "id": "2026-10-04|Seahawks nyer",
-      "tipDate": "2026-10-02",
-      "sport": "NFL",
-      "league": "4. hét",
-      "event": "Seattle Seahawks – Los Angeles Chargers",
-      "pick": "Seahawks nyer",
-      "start": "2026-10-04T22:25:00+02:00",
-      "odds": 1.29,
-      "prob": 0.741,
-      "probSrc": "piaci, árrés nélkül",
-      "status": "pending",
-      "score": "",
-      "note": "",
-      "settled": "",
-      "resultSources": []
+      "settled": "2026-10-07",
+      "resultSources": [
+        "espn401872974"
+      ]
     },
     {
       "id": "2026-10-04|Chiefs nyer",
@@ -319,11 +473,32 @@
       "odds": 1.45,
       "prob": 0.658,
       "probSrc": "piaci, árrés nélkül",
-      "status": "pending",
-      "score": "",
+      "status": "won",
+      "score": "27–30",
       "note": "",
-      "settled": "",
-      "resultSources": []
+      "settled": "2026-10-07",
+      "resultSources": [
+        "espn401872976"
+      ]
+    },
+    {
+      "id": "2026-10-04|Seahawks nyer",
+      "tipDate": "2026-10-02",
+      "sport": "NFL",
+      "league": "4. hét",
+      "event": "Seattle Seahawks – Los Angeles Chargers",
+      "pick": "Seahawks nyer",
+      "start": "2026-10-04T22:25:00+02:00",
+      "odds": 1.29,
+      "prob": 0.741,
+      "probSrc": "piaci, árrés nélkül",
+      "status": "won",
+      "score": "30–23",
+      "note": "",
+      "settled": "2026-10-07",
+      "resultSources": [
+        "espn401872977"
+      ]
     },
     {
       "id": "2026-10-05|Basavareddy nyer",
@@ -336,11 +511,13 @@
       "odds": 1.13,
       "prob": 0.829,
       "probSrc": "piaci, árrés nélkül",
-      "status": "pending",
-      "score": "",
+      "status": "lost",
+      "score": "7–6, 6–3",
       "note": "",
-      "settled": "",
-      "resultSources": []
+      "settled": "2026-10-07",
+      "resultSources": [
+        "te1005"
+      ]
     },
     {
       "id": "2026-10-05|Wong nyer",
@@ -353,28 +530,13 @@
       "odds": 1.22,
       "prob": 0.77,
       "probSrc": "piaci, árrés nélkül",
-      "status": "pending",
-      "score": "",
+      "status": "won",
+      "score": "6–4, 6–1",
       "note": "",
-      "settled": "",
-      "resultSources": []
-    },
-    {
-      "id": "2026-10-05|Olaszország nyer",
-      "tipDate": "2026-10-02",
-      "sport": "Foci",
-      "league": "Nemzetek Ligája A",
-      "event": "Olaszország – Törökország",
-      "pick": "Olaszország nyer",
-      "start": "2026-10-05T20:45:00+02:00",
-      "odds": 1.45,
-      "prob": 0.66,
-      "probSrc": "piaci, becsült árrés nélkül",
-      "status": "pending",
-      "score": "",
-      "note": "",
-      "settled": "",
-      "resultSources": []
+      "settled": "2026-10-07",
+      "resultSources": [
+        "te1005"
+      ]
     },
     {
       "id": "2026-10-05|Franciaország nyer",
@@ -387,11 +549,32 @@
       "odds": 1.47,
       "prob": 0.632,
       "probSrc": "piaci, árrés nélkül",
-      "status": "pending",
-      "score": "",
+      "status": "won",
+      "score": "4–1",
       "note": "",
-      "settled": "",
-      "resultSources": []
+      "settled": "2026-10-07",
+      "resultSources": [
+        "espn401861129"
+      ]
+    },
+    {
+      "id": "2026-10-05|Olaszország nyer",
+      "tipDate": "2026-10-02",
+      "sport": "Foci",
+      "league": "Nemzetek Ligája A",
+      "event": "Olaszország – Törökország",
+      "pick": "Olaszország nyer",
+      "start": "2026-10-05T20:45:00+02:00",
+      "odds": 1.45,
+      "prob": 0.66,
+      "probSrc": "piaci, becsült árrés nélkül",
+      "status": "won",
+      "score": "3–1",
+      "note": "",
+      "settled": "2026-10-07",
+      "resultSources": [
+        "espn401861131"
+      ]
     },
     {
       "id": "2026-10-06|Lightning nyer (hosszabbítással együtt)",
@@ -404,11 +587,13 @@
       "odds": 1.52,
       "prob": 0.631,
       "probSrc": "piaci, árrés nélkül",
-      "status": "pending",
-      "score": "",
+      "status": "won",
+      "score": "4–1",
       "note": "",
-      "settled": "",
-      "resultSources": []
+      "settled": "2026-10-07",
+      "resultSources": [
+        "espn401892445"
+      ]
     },
     {
       "id": "2026-10-06|Penguins nyer (hosszabbítással együtt)",
@@ -421,28 +606,13 @@
       "odds": 1.59,
       "prob": 0.603,
       "probSrc": "piaci, árrés nélkül",
-      "status": "pending",
-      "score": "",
+      "status": "lost",
+      "score": "2–3",
       "note": "",
-      "settled": "",
-      "resultSources": []
-    },
-    {
-      "id": "2026-10-06|Yankees nyer",
-      "tipDate": "2026-10-05",
-      "sport": "MLB",
-      "league": "ALDS, 2. meccs",
-      "event": "Tampa Bay Rays – New York Yankees",
-      "pick": "Yankees nyer",
-      "start": "2026-10-06T02:00:00+02:00",
-      "odds": 1.76,
-      "prob": 0.627,
-      "probSrc": "ESPN Analytics",
-      "status": "pending",
-      "score": "",
-      "note": "",
-      "settled": "",
-      "resultSources": []
+      "settled": "2026-10-07",
+      "resultSources": [
+        "espn401892447"
+      ]
     },
     {
       "id": "2026-10-06|Stars nyer (hosszabbítással együtt)",
@@ -455,11 +625,32 @@
       "odds": 1.57,
       "prob": 0.609,
       "probSrc": "piaci, árrés nélkül",
-      "status": "pending",
-      "score": "",
+      "status": "won",
+      "score": "5–0",
       "note": "",
-      "settled": "",
-      "resultSources": []
+      "settled": "2026-10-07",
+      "resultSources": [
+        "espn401892448"
+      ]
+    },
+    {
+      "id": "2026-10-06|Yankees nyer",
+      "tipDate": "2026-10-05",
+      "sport": "MLB",
+      "league": "ALDS, 2. meccs",
+      "event": "Tampa Bay Rays – New York Yankees",
+      "pick": "Yankees nyer",
+      "start": "2026-10-06T02:00:00+02:00",
+      "odds": 1.76,
+      "prob": 0.627,
+      "probSrc": "ESPN Analytics",
+      "status": "lost",
+      "score": "5–2",
+      "note": "",
+      "settled": "2026-10-07",
+      "resultSources": [
+        "espn401907986"
+      ]
     },
     {
       "id": "2026-10-06|Andrejeva nyer",
@@ -472,11 +663,13 @@
       "odds": 1.17,
       "prob": 0.82,
       "probSrc": "Dimers modell",
-      "status": "pending",
-      "score": "",
+      "status": "won",
+      "score": "2–6, 2–6",
       "note": "",
-      "settled": "",
-      "resultSources": []
+      "settled": "2026-10-07",
+      "resultSources": [
+        "te1006"
+      ]
     },
     {
       "id": "2026-10-06|Bartunková nyer",
@@ -489,11 +682,13 @@
       "odds": 1.18,
       "prob": 0.814,
       "probSrc": "Dimers modell",
-      "status": "pending",
-      "score": "",
+      "status": "won",
+      "score": "0–6, 6–4, 3–6",
       "note": "",
-      "settled": "",
-      "resultSources": []
+      "settled": "2026-10-07",
+      "resultSources": [
+        "te1006"
+      ]
     },
     {
       "id": "2026-10-06|Noskova nyer",
@@ -506,11 +701,13 @@
       "odds": 1.33,
       "prob": 0.734,
       "probSrc": "Dimers modell",
-      "status": "pending",
-      "score": "",
+      "status": "lost",
+      "score": "2–6, 2–6",
       "note": "",
-      "settled": "",
-      "resultSources": []
+      "settled": "2026-10-07",
+      "resultSources": [
+        "te1006"
+      ]
     },
     {
       "id": "2026-10-06|Waltert nyer",
@@ -523,11 +720,13 @@
       "odds": 1.13,
       "prob": 0.816,
       "probSrc": "piaci, árrés nélkül",
-      "status": "pending",
-      "score": "",
+      "status": "won",
+      "score": "6–2, 6–2",
       "note": "",
-      "settled": "",
-      "resultSources": []
+      "settled": "2026-10-07",
+      "resultSources": [
+        "te1006"
+      ]
     },
     {
       "id": "2026-10-06|Alcaraz nyer",
@@ -540,11 +739,13 @@
       "odds": 1.27,
       "prob": 0.774,
       "probSrc": "Dimers modell",
-      "status": "pending",
-      "score": "",
+      "status": "won",
+      "score": "7–6, 6–4",
       "note": "",
-      "settled": "",
-      "resultSources": []
+      "settled": "2026-10-07",
+      "resultSources": [
+        "te1006"
+      ]
     },
     {
       "id": "2026-10-06|Seyboth Wild nyer",
@@ -557,11 +758,13 @@
       "odds": 1.18,
       "prob": 0.787,
       "probSrc": "piaci, árrés nélkül",
-      "status": "pending",
-      "score": "",
+      "status": "won",
+      "score": "6–3, 6–4",
       "note": "",
-      "settled": "",
-      "resultSources": []
+      "settled": "2026-10-07",
+      "resultSources": [
+        "te1006"
+      ]
     },
     {
       "id": "2026-10-06|Algéria nyer",
@@ -574,11 +777,13 @@
       "odds": 1.22,
       "prob": 0.775,
       "probSrc": "piaci, árrés nélkül",
-      "status": "pending",
-      "score": "",
+      "status": "won",
+      "score": "2–1",
       "note": "",
-      "settled": "",
-      "resultSources": []
+      "settled": "2026-10-07",
+      "resultSources": [
+        "espn401917261"
+      ]
     },
     {
       "id": "2026-10-06|Heide nyer",
@@ -591,28 +796,13 @@
       "odds": 1.13,
       "prob": 0.821,
       "probSrc": "piaci, árrés nélkül",
-      "status": "pending",
-      "score": "",
+      "status": "won",
+      "score": "6–3, 1–6, 6–4",
       "note": "",
-      "settled": "",
-      "resultSources": []
-    },
-    {
-      "id": "2026-10-06|Svájc nyer",
-      "tipDate": "2026-10-05",
-      "sport": "Foci",
-      "league": "Nemzetek Ligája A",
-      "event": "Svájc – Észak-Macedónia",
-      "pick": "Svájc nyer",
-      "start": "2026-10-06T20:45:00+02:00",
-      "odds": 1.09,
-      "prob": 0.851,
-      "probSrc": "piaci, árrés nélkül",
-      "status": "pending",
-      "score": "",
-      "note": "",
-      "settled": "",
-      "resultSources": []
+      "settled": "2026-10-07",
+      "resultSources": [
+        "te1006"
+      ]
     },
     {
       "id": "2026-10-06|Anglia nyer",
@@ -625,11 +815,13 @@
       "odds": 1.11,
       "prob": 0.83,
       "probSrc": "piaci, árrés nélkül",
-      "status": "pending",
-      "score": "",
+      "status": "won",
+      "score": "3–0",
       "note": "",
-      "settled": "",
-      "resultSources": []
+      "settled": "2026-10-07",
+      "resultSources": [
+        "espn401861142"
+      ]
     },
     {
       "id": "2026-10-06|Spanyolország nyer",
@@ -642,11 +834,32 @@
       "odds": 1.26,
       "prob": 0.731,
       "probSrc": "piaci, árrés nélkül",
-      "status": "pending",
-      "score": "",
+      "status": "won",
+      "score": "1–2",
       "note": "",
-      "settled": "",
-      "resultSources": []
+      "settled": "2026-10-07",
+      "resultSources": [
+        "espn401861137"
+      ]
+    },
+    {
+      "id": "2026-10-06|Svájc nyer",
+      "tipDate": "2026-10-05",
+      "sport": "Foci",
+      "league": "Nemzetek Ligája A",
+      "event": "Svájc – Észak-Macedónia",
+      "pick": "Svájc nyer",
+      "start": "2026-10-06T20:45:00+02:00",
+      "odds": 1.09,
+      "prob": 0.851,
+      "probSrc": "piaci, árrés nélkül",
+      "status": "won",
+      "score": "3–0",
+      "note": "",
+      "settled": "2026-10-07",
+      "resultSources": [
+        "espn401861139"
+      ]
     },
     {
       "id": "2026-10-06|Szlovákia nyer",
@@ -659,11 +872,13 @@
       "odds": 1.41,
       "prob": 0.66,
       "probSrc": "piaci, árrés nélkül",
-      "status": "pending",
-      "score": "",
+      "status": "won",
+      "score": "0–4",
       "note": "",
-      "settled": "",
-      "resultSources": []
+      "settled": "2026-10-07",
+      "resultSources": [
+        "espn401861144"
+      ]
     },
     {
       "id": "2026-10-06|Angola nyer",
@@ -676,11 +891,13 @@
       "odds": 1.36,
       "prob": 0.673,
       "probSrc": "piaci, árrés nélkül",
-      "status": "pending",
-      "score": "",
+      "status": "won",
+      "score": "3–1",
       "note": "",
-      "settled": "",
-      "resultSources": []
+      "settled": "2026-10-07",
+      "resultSources": [
+        "espn401919990"
+      ]
     },
     {
       "id": "2026-10-07|Kolumbia nyer",
@@ -693,11 +910,13 @@
       "odds": 1.4,
       "prob": 0.673,
       "probSrc": "piaci, árrés nélkül",
-      "status": "pending",
-      "score": "",
+      "status": "won",
+      "score": "2–0",
       "note": "",
-      "settled": "",
-      "resultSources": []
+      "settled": "2026-10-07",
+      "resultSources": [
+        "espn401905332"
+      ]
     },
     {
       "id": "2026-10-07|Troy nyer",
@@ -710,11 +929,13 @@
       "odds": 1.24,
       "prob": 0.677,
       "probSrc": "ESPN Analytics (FPI)",
-      "status": "pending",
-      "score": "",
+      "status": "won",
+      "score": "55–34",
       "note": "",
-      "settled": "",
-      "resultSources": []
+      "settled": "2026-10-07",
+      "resultSources": [
+        "espn401871090"
+      ]
     },
     {
       "id": "2026-10-07|Golden Knights nyer (hosszabbítással együtt)",
@@ -727,11 +948,13 @@
       "odds": 1.59,
       "prob": 0.604,
       "probSrc": "piaci, árrés nélkül",
-      "status": "pending",
-      "score": "",
+      "status": "won",
+      "score": "2–6",
       "note": "",
-      "settled": "",
-      "resultSources": []
+      "settled": "2026-10-07",
+      "resultSources": [
+        "espn401892454"
+      ]
     },
     {
       "id": "2026-10-07|Padres nyer",
@@ -744,28 +967,13 @@
       "odds": 1.69,
       "prob": 0.592,
       "probSrc": "ESPN Analytics",
-      "status": "pending",
-      "score": "",
+      "status": "won",
+      "score": "4–3",
       "note": "",
-      "settled": "",
-      "resultSources": []
-    },
-    {
-      "id": "2026-10-07|Gauff nyer",
-      "tipDate": "2026-10-06",
-      "sport": "Tenisz",
-      "league": "WTA 1000, Peking",
-      "event": "Coco Gauff – Elise Mertens",
-      "pick": "Gauff nyer",
-      "start": "2026-10-07T05:00:00+02:00",
-      "odds": 1.22,
-      "prob": 0.794,
-      "probSrc": "Dimers modell",
-      "status": "pending",
-      "score": "",
-      "note": "",
-      "settled": "",
-      "resultSources": []
+      "settled": "2026-10-07",
+      "resultSources": [
+        "espn401908004"
+      ]
     },
     {
       "id": "2026-10-07|Cseng Csin-ven nyer",
@@ -785,15 +993,34 @@
       "resultSources": []
     },
     {
-      "id": "2026-10-07|Borges nyer",
+      "id": "2026-10-07|Gauff nyer",
       "tipDate": "2026-10-06",
       "sport": "Tenisz",
-      "league": "ATP 1000, Sanghaj – 1. forduló",
-      "event": "Nuno Borges – Facundo Díaz Acosta",
-      "pick": "Borges nyer",
-      "start": "2026-10-07T06:00:00+02:00",
-      "odds": 1.25,
-      "prob": 0.78,
+      "league": "WTA 1000, Peking",
+      "event": "Coco Gauff – Elise Mertens",
+      "pick": "Gauff nyer",
+      "start": "2026-10-07T05:00:00+02:00",
+      "odds": 1.22,
+      "prob": 0.794,
+      "probSrc": "Dimers modell",
+      "status": "lost",
+      "score": "3–6, 3–6",
+      "note": "",
+      "settled": "2026-10-07",
+      "resultSources": [
+        "te1007"
+      ]
+    },
+    {
+      "id": "2026-10-07|Szvitolina nyer",
+      "tipDate": "2026-10-07",
+      "sport": "Tenisz",
+      "league": "WTA 1000, Peking",
+      "event": "Ann Li – Elina Szvitolina",
+      "pick": "Szvitolina nyer",
+      "start": "2026-10-07T14:10:00+02:00",
+      "odds": 1.32,
+      "prob": 0.747,
       "probSrc": "Dimers modell",
       "status": "pending",
       "score": "",
@@ -802,16 +1029,16 @@
       "resultSources": []
     },
     {
-      "id": "2026-10-08|FIU nyer",
-      "tipDate": "2026-10-06",
-      "sport": "Amerikai foci",
-      "league": "NCAA, Conference USA",
-      "event": "FIU Panthers – New Mexico State Aggies",
-      "pick": "FIU nyer",
+      "id": "2026-10-08|Avalanche nyer (hosszabbítással együtt)",
+      "tipDate": "2026-10-07",
+      "sport": "NHL",
+      "league": "Alapszakasz",
+      "event": "Winnipeg Jets – Colorado Avalanche",
+      "pick": "Avalanche nyer (hosszabbítással együtt)",
       "start": "2026-10-08T01:30:00+02:00",
-      "odds": 1.43,
-      "prob": 0.632,
-      "probSrc": "ESPN Analytics (FPI)",
+      "odds": 1.54,
+      "prob": 0.622,
+      "probSrc": "piaci, árrés nélkül",
       "status": "pending",
       "score": "",
       "note": "",
@@ -836,6 +1063,40 @@
       "resultSources": []
     },
     {
+      "id": "2026-10-08|FIU nyer",
+      "tipDate": "2026-10-06",
+      "sport": "Amerikai foci",
+      "league": "NCAA, Conference USA",
+      "event": "FIU Panthers – New Mexico State Aggies",
+      "pick": "FIU nyer",
+      "start": "2026-10-08T01:30:00+02:00",
+      "odds": 1.43,
+      "prob": 0.632,
+      "probSrc": "ESPN Analytics (FPI)",
+      "status": "pending",
+      "score": "",
+      "note": "",
+      "settled": "",
+      "resultSources": []
+    },
+    {
+      "id": "2026-10-08|Thunder nyer",
+      "tipDate": "2026-10-07",
+      "sport": "Kosárlabda",
+      "league": "NBA, felkészülési mérkőzés",
+      "event": "Oklahoma City Thunder – Milwaukee Bucks",
+      "pick": "Thunder nyer",
+      "start": "2026-10-08T02:00:00+02:00",
+      "odds": 1.23,
+      "prob": 0.782,
+      "probSrc": "piaci, árrés nélkül",
+      "status": "pending",
+      "score": "",
+      "note": "",
+      "settled": "",
+      "resultSources": []
+    },
+    {
       "id": "2026-10-08|Yankees nyer",
       "tipDate": "2026-10-06",
       "sport": "MLB",
@@ -846,6 +1107,176 @@
       "odds": 1.62,
       "prob": 0.612,
       "probSrc": "ESPN Analytics",
+      "status": "pending",
+      "score": "",
+      "note": "",
+      "settled": "",
+      "resultSources": []
+    },
+    {
+      "id": "2026-10-08|Andrejeva nyer",
+      "tipDate": "2026-10-07",
+      "sport": "Tenisz",
+      "league": "WTA 1000, Peking",
+      "event": "Jekatyerina Alekszandrova – Mirra Andrejeva",
+      "pick": "Andrejeva nyer",
+      "start": "2026-10-08T05:00:00+02:00",
+      "odds": 1.3,
+      "prob": 0.757,
+      "probSrc": "Dimers modell",
+      "status": "pending",
+      "score": "",
+      "note": "",
+      "settled": "",
+      "resultSources": []
+    },
+    {
+      "id": "2026-10-08|Borges nyer",
+      "tipDate": "2026-10-06",
+      "sport": "Tenisz",
+      "league": "ATP 1000, Sanghaj – 1. forduló",
+      "event": "Nuno Borges – Facundo Díaz Acosta",
+      "pick": "Borges nyer",
+      "start": "2026-10-08T06:00:00+02:00",
+      "odds": 1.25,
+      "prob": 0.78,
+      "probSrc": "Dimers modell",
+      "status": "pending",
+      "score": "",
+      "note": "A meccs 10. 8-ra került a sanghaji programban; a kezdési időt és az azonosítót ehhez igazítottuk (ESPN, tennisexplorer).",
+      "settled": "",
+      "resultSources": []
+    },
+    {
+      "id": "2026-10-08|Cicipasz nyer",
+      "tipDate": "2026-10-07",
+      "sport": "Tenisz",
+      "league": "ATP 1000, Sanghaj",
+      "event": "Kimmer Coppejans – Sztefanosz Cicipasz",
+      "pick": "Cicipasz nyer",
+      "start": "2026-10-08T06:00:00+02:00",
+      "odds": 1.08,
+      "prob": 0.83,
+      "probSrc": "Dimers modell",
+      "status": "pending",
+      "score": "",
+      "note": "",
+      "settled": "",
+      "resultSources": []
+    },
+    {
+      "id": "2026-10-09|Liberty nyer",
+      "tipDate": "2026-10-07",
+      "sport": "Amerikai foci",
+      "league": "NCAA, Conference USA",
+      "event": "Liberty Flames – Sam Houston Bearkats",
+      "pick": "Liberty nyer",
+      "start": "2026-10-09T01:00:00+02:00",
+      "odds": 1.18,
+      "prob": 0.824,
+      "probSrc": "ESPN Analytics (FPI)",
+      "status": "pending",
+      "score": "",
+      "note": "",
+      "settled": "",
+      "resultSources": []
+    },
+    {
+      "id": "2026-10-09|UTSA nyer",
+      "tipDate": "2026-10-07",
+      "sport": "Amerikai foci",
+      "league": "NCAA, American",
+      "event": "UTSA Roadrunners – South Florida Bulls",
+      "pick": "UTSA nyer",
+      "start": "2026-10-09T01:30:00+02:00",
+      "odds": 1.36,
+      "prob": 0.614,
+      "probSrc": "ESPN Analytics (FPI)",
+      "status": "pending",
+      "score": "",
+      "note": "",
+      "settled": "",
+      "resultSources": []
+    },
+    {
+      "id": "2026-10-09|Cowboys nyer",
+      "tipDate": "2026-10-07",
+      "sport": "NFL",
+      "league": "NFL, 5. hét (csütörtök)",
+      "event": "Dallas Cowboys – Tampa Bay Buccaneers",
+      "pick": "Cowboys nyer",
+      "start": "2026-10-09T02:15:00+02:00",
+      "odds": 1.22,
+      "prob": 0.861,
+      "probSrc": "ESPN Analytics (FPI)",
+      "status": "pending",
+      "score": "",
+      "note": "",
+      "settled": "",
+      "resultSources": []
+    },
+    {
+      "id": "2026-10-09|Fluminense nyer",
+      "tipDate": "2026-10-07",
+      "sport": "Foci",
+      "league": "Brasileirão",
+      "event": "Fluminense – Coritiba",
+      "pick": "Fluminense nyer",
+      "start": "2026-10-09T02:30:00+02:00",
+      "odds": 1.49,
+      "prob": 0.624,
+      "probSrc": "piaci, árrés nélkül",
+      "status": "pending",
+      "score": "",
+      "note": "",
+      "settled": "",
+      "resultSources": []
+    },
+    {
+      "id": "2026-10-09|Palmeiras nyer",
+      "tipDate": "2026-10-07",
+      "sport": "Foci",
+      "league": "Brasileirão",
+      "event": "Palmeiras – Bahia",
+      "pick": "Palmeiras nyer",
+      "start": "2026-10-09T02:30:00+02:00",
+      "odds": 1.54,
+      "prob": 0.61,
+      "probSrc": "piaci, árrés nélkül",
+      "status": "pending",
+      "score": "",
+      "note": "",
+      "settled": "",
+      "resultSources": []
+    },
+    {
+      "id": "2026-10-09|Galatasaray nyer",
+      "tipDate": "2026-10-07",
+      "sport": "Foci",
+      "league": "Török Szuperliga",
+      "event": "Galatasaray – Kasımpaşa",
+      "pick": "Galatasaray nyer",
+      "start": "2026-10-09T19:00:00+02:00",
+      "odds": 1.25,
+      "prob": 0.75,
+      "probSrc": "piaci, árrés nélkül",
+      "status": "pending",
+      "score": "",
+      "note": "",
+      "settled": "",
+      "resultSources": []
+    },
+    {
+      "id": "2026-10-09|PSV nyer",
+      "tipDate": "2026-10-07",
+      "sport": "Foci",
+      "league": "Eredivisie",
+      "event": "PSV Eindhoven – Heerenveen",
+      "pick": "PSV nyer",
+      "start": "2026-10-09T20:00:00+02:00",
+      "odds": 1.24,
+      "prob": 0.751,
+      "probSrc": "piaci, árrés nélkül",
       "status": "pending",
       "score": "",
       "note": "",
