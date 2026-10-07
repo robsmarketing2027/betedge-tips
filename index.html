@@ -8,11 +8,13 @@
   :root {
     --bg: #f5f6f4; --card: #ffffff; --text: #1b1f1d; --muted: #66706a; --line: #e2e6e3;
     --accent: #0f7a4d; --accent-soft: #e3f3eb; --warn: #9a6200; --warn-soft: #fff3d6; --bar: #dfe5e1;
+    --bad: #b3261e; --bad-soft: #fbe9e7;
   }
   @media (prefers-color-scheme: dark) {
     :root {
       --bg: #121513; --card: #1b201d; --text: #e9eeeb; --muted: #98a39c; --line: #2b322e;
       --accent: #4cc38a; --accent-soft: #1d3329; --warn: #f0b955; --warn-soft: #3a2f16; --bar: #2b322e;
+      --bad: #f2867d; --bad-soft: #3a1f1c;
     }
   }
   * { box-sizing: border-box; }
@@ -23,7 +25,16 @@
   main { max-width: 760px; margin: 0 auto; padding: 24px 16px 48px; }
   h1 { font-size: 26px; margin: 0 0 4px; letter-spacing: -0.02em; }
   h1 span { color: var(--accent); }
-  .sub { color: var(--muted); margin: 0 0 16px; }
+  h2 { font-size: 15px; margin: 18px 0 8px; }
+  .sub { color: var(--muted); margin: 0 0 14px; }
+  .topbar { display: flex; flex-wrap: wrap; gap: 10px 16px; align-items: end; justify-content: space-between; margin-bottom: 12px; }
+  .tabs { display: flex; gap: 6px; }
+  .tabs a {
+    color: var(--muted); text-decoration: none; border: 1px solid var(--line); border-radius: 999px;
+    padding: 6px 14px; font-weight: 600;
+  }
+  .tabs a[aria-current=page] { color: var(--accent); border-color: var(--accent); background: var(--accent-soft); }
+  .stakebar label { display: inline; margin-right: 6px; }
   .panel, .tip {
     background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 14px 16px;
   }
@@ -31,7 +42,7 @@
   .controls { display: flex; flex-wrap: wrap; gap: 12px 20px; align-items: end; }
   label { display: block; font-size: 12px; color: var(--muted); margin-bottom: 4px; }
   input[type=number] {
-    font: inherit; color: inherit; background: var(--bg); border: 1px solid var(--line);
+    font: inherit; color: inherit; background: var(--card); border: 1px solid var(--line);
     border-radius: 8px; padding: 6px 8px; width: 120px; max-width: 100%;
   }
   .sort { display: flex; gap: 6px; }
@@ -41,6 +52,7 @@
   }
   .sort button[aria-pressed=true] { color: var(--accent); border-color: var(--accent); background: var(--accent-soft); }
   .stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin-top: 14px; }
+  .stats.first { margin-top: 0; }
   .stat b { display: block; font-size: 18px; font-variant-numeric: tabular-nums; }
   .stat small { color: var(--muted); }
   .note { font-size: 13px; color: var(--muted); margin: 12px 0 0; }
@@ -50,8 +62,10 @@
   .meta { display: flex; flex-wrap: wrap; gap: 6px 10px; align-items: center; font-size: 12px; color: var(--muted); }
   .rank { font-weight: 700; color: var(--text); }
   .chip { border: 1px solid var(--line); border-radius: 999px; padding: 1px 8px; }
-  .chip.value { color: var(--accent); border-color: var(--accent); background: var(--accent-soft); }
-  .chip.gone { color: var(--warn); border-color: var(--warn); }
+  .chip.value, .chip.won { color: var(--accent); border-color: var(--accent); background: var(--accent-soft); }
+  .chip.gone, .chip.void { color: var(--warn); border-color: var(--warn); }
+  .chip.lost { color: var(--bad); border-color: var(--bad); background: var(--bad-soft); }
+  .chip.won, .chip.lost { font-weight: 700; }
   .event { font-size: 13px; color: var(--muted); margin-top: 8px; }
   .pick { font-size: 18px; font-weight: 650; margin: 0 0 8px; letter-spacing: -0.01em; }
   .bar { height: 6px; background: var(--bar); border-radius: 3px; overflow: hidden; }
@@ -65,6 +79,20 @@
   .why { margin: 10px 0 0; font-size: 14px; }
   .src { margin: 6px 0 0; font-size: 12px; color: var(--muted); }
   a { color: var(--accent); }
+  table { width: 100%; border-collapse: collapse; font-variant-numeric: tabular-nums; font-size: 14px; }
+  th, td { text-align: right; padding: 6px 4px; border-bottom: 1px solid var(--line); }
+  th:first-child, td:first-child { text-align: left; }
+  th { font-size: 12px; color: var(--muted); font-weight: 600; }
+  tr:last-child td { border-bottom: 0; }
+  .day { display: flex; justify-content: space-between; gap: 10px; flex-wrap: wrap; margin: 18px 0 8px; font-size: 14px; }
+  .day b { font-size: 15px; }
+  .day span { color: var(--muted); font-variant-numeric: tabular-nums; }
+  .res .pick { font-size: 16px; margin: 0; }
+  .resline { display: flex; flex-wrap: wrap; gap: 4px 16px; font-size: 13px; color: var(--muted); margin-top: 6px; font-variant-numeric: tabular-nums; }
+  .resline b { color: var(--text); }
+  .pos { color: var(--accent); }
+  .neg { color: var(--bad); }
+  .tip.pending { opacity: 0.7; }
   footer { margin-top: 20px; font-size: 12px; color: var(--muted); }
   @media (max-width: 520px) { .stats { grid-template-columns: 1fr; } }
 </style>
@@ -74,61 +102,104 @@
   <h1>BetEdge <span>Tippek</span></h1>
   <p class="sub" id="sub">Tippek betöltése…</p>
 
-  <div class="panel stale" id="stale" hidden></div>
-
-  <div class="panel" id="controls" hidden>
-    <div class="controls">
-      <div>
-        <label for="stake">Tét tippenként (Ft)</label>
-        <input id="stake" type="number" min="0" step="100" value="1000" inputmode="numeric">
-      </div>
-      <div>
-        <label>Sorrend</label>
-        <div class="sort">
-          <button type="button" data-sort="prob" aria-pressed="true">Esély szerint</button>
-          <button type="button" data-sort="time" aria-pressed="false">Időpont szerint</button>
-        </div>
-      </div>
+  <div class="topbar">
+    <nav class="tabs" aria-label="Nézet">
+      <a href="#" data-view="tips">Mai tippek</a>
+      <a href="#eredmenyek" data-view="results">Eredmények</a>
+    </nav>
+    <div class="stakebar">
+      <label for="stake">Tét tippenként (Ft)</label>
+      <input id="stake" type="number" min="0" step="100" value="1000" inputmode="numeric">
     </div>
-    <div class="stats">
-      <div class="stat"><b id="sHits"></b><small>várható találat</small></div>
-      <div class="stat"><b id="sBest"></b><small>nyereség, ha mind nyer</small></div>
-      <div class="stat"><b id="sEv"></b><small>várható eredmény a megadott szorzókon</small></div>
-    </div>
-    <p class="note">
-      A szorzó mezőbe írd be a saját oldalad aktuális szorzóját. Egy tipp akkor éri meg hosszú távon, ha a
-      szorzó eléri a <b>min. szorzót</b> (1 / esély) – ilyenkor „érték” jelölést kap. A favoritok is
-      rendszeresen kikapnak: a becsült esélyek alapján a tippek negyede-ötöde nem jön be.
-    </p>
   </div>
 
-  <ol class="tips" id="tips"></ol>
+  <section id="viewTips">
+    <div class="panel stale" id="stale" hidden></div>
+
+    <div class="panel" id="controls" hidden>
+      <div class="controls">
+        <div>
+          <label>Sorrend</label>
+          <div class="sort">
+            <button type="button" data-sort="prob" aria-pressed="true">Esély szerint</button>
+            <button type="button" data-sort="time" aria-pressed="false">Időpont szerint</button>
+          </div>
+        </div>
+      </div>
+      <div class="stats">
+        <div class="stat"><b id="sHits"></b><small>várható találat</small></div>
+        <div class="stat"><b id="sBest"></b><small>nyereség, ha mind nyer</small></div>
+        <div class="stat"><b id="sEv"></b><small>várható eredmény a megadott szorzókon</small></div>
+      </div>
+      <p class="note">
+        A szorzó mezőbe írd be a saját oldalad aktuális szorzóját. Egy tipp akkor éri meg hosszú távon, ha a
+        szorzó eléri a <b>min. szorzót</b> (1 / esély) – ilyenkor „érték” jelölést kap. A favoritok is
+        rendszeresen kikapnak: a becsült esélyek alapján a tippek negyede-ötöde nem jön be. Hogy eddig
+        mennyire jöttek be, az <a href="#eredmenyek">Eredmények</a> fülön látod.
+      </p>
+    </div>
+
+    <ol class="tips" id="tips"></ol>
+  </section>
+
+  <section id="viewResults" hidden>
+    <p class="sub" id="resStatus">Eredmények betöltése…</p>
+    <div id="resBody" hidden>
+      <div class="panel">
+        <div class="stats first">
+          <div class="stat"><b id="rHits"></b><small>talált a lezárt tippekből</small></div>
+          <div class="stat"><b id="rExp"></b><small>várható találat a becsült esélyekből</small></div>
+          <div class="stat"><b id="rProfit"></b><small>eredmény a referencia-szorzókon</small></div>
+        </div>
+        <p class="note" id="rNote"></p>
+      </div>
+
+      <div class="panel">
+        <h2 style="margin-top:0">Esély szerint</h2>
+        <table>
+          <thead><tr><th>Becsült esély</th><th>Tipp</th><th>Talált</th><th>Várható</th><th>Eredmény</th></tr></thead>
+          <tbody id="rBuckets"></tbody>
+        </table>
+        <h2>Sportág szerint</h2>
+        <table>
+          <thead><tr><th>Sportág</th><th>Tipp</th><th>Talált</th><th>Várható</th><th>Eredmény</th></tr></thead>
+          <tbody id="rSports"></tbody>
+        </table>
+      </div>
+
+      <div id="resList"></div>
+    </div>
+  </section>
 
   <footer>
     <p>
-      A tippeket minden reggel egy automatikus kutatás állítja össze nyilvános forrásokból; ez az oldal
-      megnyitáskor mindig az aznapi fájlt tölti be. Az oldal független a BetEdge táblától: a tippek nem
-      mentek át a BetEdge kapuin (kapu-verzió: nincs), a szorzók tájékoztató referenciaárak, nem a
-      Tippmixpro vagy a Vegas.hu árai. Minden esély becslés, a forrása és a dátuma a tippnél látható.
-      A fogadást te teszed meg, saját felelősségre. 18+
+      A tippeket minden reggel egy automatikus kutatás állítja össze nyilvános forrásokból, és ugyanez a
+      kutatás zárja le a korábbi tippeket a végeredmény forrásával együtt; az oldal megnyitáskor mindig a
+      legfrissebb fájlokat tölti be. Az oldal független a BetEdge táblától: a tippek nem mentek át a BetEdge
+      kapuin (kapu-verzió: nincs), a szorzók tájékoztató referenciaárak, nem a Tippmixpro vagy a Vegas.hu
+      árai. Minden esély becslés, a forrása és a dátuma a tippnél látható. A múltbeli eredmény nem ígéret a
+      jövőre. A fogadást te teszed meg, saját felelősségre. 18+
     </p>
   </footer>
 </main>
 
 <script>
-// The data lives in tips.json next to this file, rewritten daily by the routine described in UPDATE.md.
-// When the page is opened as a local file the browser refuses to read the neighbour file, so the
-// published copy is tried next. Keep it in sync with where the repository is served from.
-const PUBLISHED_DATA_URL = 'https://robsmarketing2027.github.io/betedge-tips/tips.json';
+// The data lives next to this file: tips.json (today's tips) and results.json (every earlier tip and how
+// it ended), both rewritten daily by the routine described in UPDATE.md. When the page is opened as a
+// local file the browser refuses to read the neighbour files, so the published copies are tried next.
+const PUBLISHED_BASE = 'https://robsmarketing2027.github.io/betedge-tips/';
 
 const $ = (id) => document.getElementById(id);
 const nf = (n, d = 0) => n.toLocaleString('hu-HU', { minimumFractionDigits: d, maximumFractionDigits: d });
 const ft = (n) => (n > 0 ? '+' : n < 0 ? '−' : '') + nf(Math.abs(Math.round(n))) + ' Ft';
+const pct = (n, d = 1) => nf(n * 100, d) + '%';
 const when = new Intl.DateTimeFormat('hu-HU', {
   weekday: 'short', month: 'short', day: 'numeric', hour: '2-digit', minute: '2-digit', timeZone: 'Europe/Budapest',
 });
 const dayFmt = new Intl.DateTimeFormat('hu-HU', { year: 'numeric', month: 'long', day: 'numeric', timeZone: 'Europe/Budapest' });
+const shortDay = new Intl.DateTimeFormat('hu-HU', { month: 'long', day: 'numeric', weekday: 'long', timeZone: 'Europe/Budapest' });
 const isoDay = (d) => new Intl.DateTimeFormat('en-CA', { timeZone: 'Europe/Budapest' }).format(d);
+const noon = (iso) => new Date(iso + 'T12:00:00');
 const minOdds = (p) => Math.ceil(100 / p) / 100;
 const el = (tag, cls, text) => {
   const e = document.createElement(tag);
@@ -136,14 +207,46 @@ const el = (tag, cls, text) => {
   if (text != null) e.textContent = text;
   return e;
 };
-
-let DATA = null;
-let sortBy = 'prob';
+const signCls = (n) => (n > 0 ? 'pos' : n < 0 ? 'neg' : '');
 
 function stake() {
   const v = parseFloat($('stake').value);
   return Number.isFinite(v) && v > 0 ? v : 0;
 }
+
+async function fetchJson(name) {
+  const urls = ['./' + name, PUBLISHED_BASE + name];
+  let lastError = null;
+  for (const url of urls) {
+    try {
+      const res = await fetch(url + '?t=' + Date.now(), { cache: 'no-store' });
+      if (res.ok) return await res.json();
+      lastError = new Error(name + ': HTTP ' + res.status);
+    } catch (e) {
+      lastError = e;
+    }
+  }
+  throw lastError || new Error(name);
+}
+
+function sourceLinks(keys, sources) {
+  const p = el('p', 'src', 'Forrás: ');
+  let n = 0;
+  (keys || []).forEach((key) => {
+    const s = sources[key];
+    if (!s) return;
+    const a = el('a', null, s.name);
+    a.href = s.url; a.target = '_blank'; a.rel = 'noopener';
+    if (n++) p.append(', ');
+    p.append(a);
+  });
+  return n ? p : null;
+}
+
+// ---------------------------------------------------------------- today's tips
+
+let DATA = null;
+let sortBy = 'prob';
 
 function renderTip(t, rank, now) {
   const started = now > new Date(t.start);
@@ -165,7 +268,7 @@ function renderTip(t, rank, now) {
   fill.style.width = (t.prob * 100).toFixed(1) + '%';
   bar.append(fill);
   const probline = el('div', 'probline');
-  probline.append(el('b', null, 'Esély ~' + nf(t.prob * 100, 1) + '%'), ' · ' + t.probSrc + ' · ' + t.asOf);
+  probline.append(el('b', null, 'Esély ~' + pct(t.prob)), ' · ' + t.probSrc + ' · ' + t.asOf);
   li.append(bar, probline);
 
   const money = el('div', 'money');
@@ -185,16 +288,8 @@ function renderTip(t, rank, now) {
   li.append(money);
 
   li.append(el('p', 'why', t.why));
-  const src = el('p', 'src', 'Forrás: ');
-  (t.sources || []).forEach((key, i) => {
-    const s = DATA.sources[key];
-    if (!s) return;
-    const a = el('a', null, s.name);
-    a.href = s.url; a.target = '_blank'; a.rel = 'noopener';
-    if (i) src.append(', ');
-    src.append(a);
-  });
-  li.append(src);
+  const src = sourceLinks(t.sources, DATA.sources);
+  if (src) li.append(src);
 
   const update = () => {
     valueChip.hidden = t.myOdds < minOdds(t.prob);
@@ -204,13 +299,13 @@ function renderTip(t, rank, now) {
     const v = parseFloat(inp.value);
     t.myOdds = Number.isFinite(v) && v >= 1 ? v : t.odds;
     update();
-    renderStats();
+    renderTipStats();
   });
   update();
   return li;
 }
 
-function renderStats() {
+function renderTipStats() {
   const s = stake();
   const tips = DATA.tips;
   const hits = tips.reduce((a, t) => a + t.prob, 0);
@@ -219,45 +314,164 @@ function renderStats() {
   $('sEv').textContent = ft(tips.reduce((a, t) => a + s * (t.prob * t.myOdds - 1), 0));
 }
 
-function render() {
+function renderTips() {
+  if (!DATA) return;
   const now = new Date();
   const ranked = [...DATA.tips].sort((a, b) => b.prob - a.prob);
   ranked.forEach((t, i) => { t.rank = i + 1; });
   const shown = sortBy === 'time' ? [...ranked].sort((a, b) => new Date(a.start) - new Date(b.start)) : ranked;
   $('tips').replaceChildren(...shown.map((t) => renderTip(t, t.rank, now)));
-  renderStats();
+  renderTipStats();
 }
 
-async function fetchData() {
-  const urls = ['./tips.json', PUBLISHED_DATA_URL].filter(Boolean);
-  let lastError = null;
-  for (const url of urls) {
-    try {
-      const res = await fetch(url + (url.includes('?') ? '&' : '?') + 't=' + Date.now(), { cache: 'no-store' });
-      if (res.ok) return await res.json();
-      lastError = new Error(url + ': HTTP ' + res.status);
-    } catch (e) {
-      lastError = e;
-    }
-  }
-  throw lastError || new Error('no data url');
-}
-
-function showData(data) {
+function showTips(data) {
   DATA = data;
   DATA.tips.forEach((t) => { t.myOdds = t.odds; });
   const snap = new Date(data.snapshot);
-  const today = isoDay(new Date());
   $('sub').textContent = DATA.tips.length + ' tipp a legnagyobb becsült eséllyel, minden sportágból · '
-    + dayFmt.format(new Date(data.date + 'T12:00:00')) + ' · kutatás lezárva: ' + when.format(snap);
-  if (data.date < today) {
+    + dayFmt.format(noon(data.date)) + ' · kutatás lezárva: ' + when.format(snap);
+  if (data.date < isoDay(new Date())) {
     $('stale').hidden = false;
-    $('stale').textContent = 'Ezek még a ' + dayFmt.format(new Date(data.date + 'T12:00:00'))
+    $('stale').textContent = 'Ezek még a ' + dayFmt.format(noon(data.date))
       + '-i tippek: a mai frissítés még nem futott le. Az elkezdődött események szürkék; fogadás előtt '
       + 'nézd meg a saját oldalad aktuális szorzóját és a friss csapathíreket.';
   }
   $('controls').hidden = false;
-  render();
+  renderTips();
+}
+
+// ---------------------------------------------------------------- results of earlier tips
+
+const STATUS = {
+  won: ['Nyert', 'won'], lost: ['Vesztett', 'lost'], void: ['Visszajár', 'void'],
+  pending: ['Függőben', ''], nodata: ['Nincs adat', ''],
+};
+const BUCKETS = [['80% felett', 0.8, 1.01], ['70–80%', 0.7, 0.8], ['70% alatt', 0, 0.7]];
+
+let RES = null;
+let resLoad = null;
+
+// Profit of one settled tip at its reference odds with the current stake; void returns the stake.
+const pnl = (r, s) => (r.status === 'won' ? s * (r.odds - 1) : r.status === 'lost' ? -s : 0);
+
+function summarize(rows, s) {
+  const done = rows.filter((r) => r.status === 'won' || r.status === 'lost');
+  return {
+    n: done.length,
+    won: done.filter((r) => r.status === 'won').length,
+    exp: done.reduce((a, r) => a + r.prob, 0),
+    profit: done.reduce((a, r) => a + pnl(r, s), 0),
+  };
+}
+
+function tableRow(label, sum, s) {
+  const tr = el('tr');
+  tr.append(el('td', null, label), el('td', null, String(sum.n)),
+    el('td', null, sum.n ? sum.won + ' (' + pct(sum.won / sum.n, 0) + ')' : '–'),
+    el('td', null, sum.n ? pct(sum.exp / sum.n, 0) : '–'),
+    el('td', signCls(sum.profit), sum.n ? ft(sum.profit) : '–'));
+  return tr;
+}
+
+function renderResultRow(r, s) {
+  const li = el('li', 'tip res' + (r.status === 'pending' || r.status === 'nodata' ? ' pending' : ''));
+  const [label, cls] = STATUS[r.status] || [r.status, ''];
+  const meta = el('div', 'meta');
+  meta.append(el('span', 'chip ' + cls, label), el('span', 'chip', r.sport), el('span', null, r.league),
+    el('span', null, when.format(new Date(r.start))));
+  li.append(meta, el('div', 'event', r.event), el('p', 'pick', r.pick));
+
+  const line = el('div', 'resline');
+  const odds = el('span', null, 'szorzó ');
+  odds.append(el('b', null, nf(r.odds, 2)));
+  const prob = el('span', null, 'esély ');
+  prob.append(el('b', null, '~' + pct(r.prob)));
+  line.append(odds, prob);
+  if (r.score) {
+    const sc = el('span', null, 'végeredmény ');
+    sc.append(el('b', null, r.score));
+    line.append(sc);
+  }
+  if (r.status === 'won' || r.status === 'lost' || r.status === 'void') {
+    const v = pnl(r, s);
+    line.append(el('b', signCls(v), ft(v)));
+  }
+  li.append(line);
+  if (r.note) li.append(el('p', 'why', r.note));
+  const src = sourceLinks(r.resultSources, RES.sources);
+  if (src) li.append(src);
+  return li;
+}
+
+function renderResults() {
+  if (!RES) return;
+  const s = stake();
+  const rows = RES.results;
+  const total = summarize(rows, s);
+  const pending = rows.filter((r) => r.status === 'pending').length;
+  const voids = rows.filter((r) => r.status === 'void').length;
+  const nodata = rows.filter((r) => r.status === 'nodata').length;
+
+  $('resStatus').textContent = rows.length
+    ? rows.length + ' korábbi tipp, ebből ' + total.n + ' lezárva · utolsó ellenőrzés: ' + when.format(new Date(RES.updated))
+    : 'Még nincs korábbi tipp.';
+  $('resBody').hidden = !rows.length;
+  if (!rows.length) return;
+
+  $('rHits').textContent = total.n ? total.won + ' / ' + total.n + ' (' + pct(total.won / total.n) + ')' : '–';
+  $('rExp').textContent = total.n ? nf(total.exp, 1) + ' (' + pct(total.exp / total.n) + ')' : '–';
+  $('rProfit').textContent = total.n ? ft(total.profit) + ' (ROI ' + (total.profit >= 0 ? '+' : '−')
+    + pct(Math.abs(total.profit) / (s * total.n || 1)) + ')' : '–';
+  $('rProfit').className = signCls(total.profit);
+  $('rNote').textContent = 'Lapos tét: minden tipp ' + nf(s) + ' Ft, a tipp megjelenésekor közölt referencia-szorzón. '
+    + 'Ha a találati arány a várható körül van, az esélybecslések rendben vannak; tartósan alatta azt jelenti, hogy '
+    + 'túlbecsültük a favoritokat. Függőben: ' + pending + ' · visszajáró tét: ' + voids
+    + (nodata ? ' · forrás nélkül maradt: ' + nodata : '') + '.';
+
+  $('rBuckets').replaceChildren(...BUCKETS.map(([label, lo, hi]) =>
+    tableRow(label, summarize(rows.filter((r) => r.prob >= lo && r.prob < hi), s), s)));
+  const sports = [...new Set(rows.map((r) => r.sport))];
+  const bySport = sports.map((sp) => [sp, summarize(rows.filter((r) => r.sport === sp), s)])
+    .sort((a, b) => b[1].n - a[1].n || a[0].localeCompare(b[0], 'hu'));
+  $('rSports').replaceChildren(...bySport.map(([sp, sum]) => tableRow(sp, sum, s)));
+
+  // Grouped by the day the tip was published, newest first; within a day in start order.
+  const days = [...new Set(rows.map((r) => r.tipDate))].sort().reverse();
+  const blocks = [];
+  for (const d of days) {
+    const dayRows = rows.filter((r) => r.tipDate === d).sort((a, b) => new Date(a.start) - new Date(b.start));
+    const sum = summarize(dayRows, s);
+    const head = el('div', 'day');
+    head.append(el('b', null, shortDay.format(noon(d)) + ' tippjei'),
+      el('span', null, sum.n ? sum.won + ' / ' + sum.n + ' talált · ' + ft(sum.profit) : 'még nincs lezárva'));
+    const ol = el('ol', 'tips');
+    ol.append(...dayRows.map((r) => renderResultRow(r, s)));
+    blocks.push(head, ol);
+  }
+  $('resList').replaceChildren(...blocks);
+}
+
+function loadResults() {
+  if (!resLoad) {
+    resLoad = fetchJson('results.json').then((d) => { RES = d; renderResults(); }).catch((e) => {
+      resLoad = null;
+      $('resStatus').textContent = 'Nem sikerült betölteni az eredményeket (' + e.message + ').';
+    });
+  }
+  return resLoad;
+}
+
+// ---------------------------------------------------------------- views and wiring
+
+function route() {
+  const results = location.hash === '#eredmenyek';
+  $('viewTips').hidden = results;
+  $('viewResults').hidden = !results;
+  document.querySelectorAll('.tabs a').forEach((a) => {
+    if ((a.dataset.view === 'results') === results) a.setAttribute('aria-current', 'page');
+    else a.removeAttribute('aria-current');
+  });
+  if (results) loadResults();
 }
 
 try {
@@ -266,15 +480,18 @@ try {
 } catch { /* storage unavailable */ }
 $('stake').addEventListener('input', () => {
   try { localStorage.setItem('betedge.tips.stake', $('stake').value); } catch { /* storage unavailable */ }
-  render();
+  renderTips();
+  renderResults();
 });
 document.querySelectorAll('.sort button').forEach((b) => b.addEventListener('click', () => {
   sortBy = b.dataset.sort;
   document.querySelectorAll('.sort button').forEach((x) => x.setAttribute('aria-pressed', String(x === b)));
-  render();
+  renderTips();
 }));
+window.addEventListener('hashchange', route);
+route();
 
-fetchData().then(showData).catch((e) => {
+fetchJson('tips.json').then(showTips).catch((e) => {
   $('sub').textContent = 'Nem sikerült betölteni a tippeket (' + e.message + '). '
     + 'Fájlként megnyitva a böngésző nem olvassa a tips.json-t; nyisd meg a közzétett címen.';
 });
