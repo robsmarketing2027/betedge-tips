@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-07T13:35:00+02:00",
+  "updated": "2026-10-08T07:30:00+02:00",
   "sources": {
     "te1003": {
       "name": "Tennis Explorer, okt. 3.",
@@ -136,6 +136,26 @@
     "espn401908004": {
       "name": "ESPN MLB: San Diego Padres – Milwaukee Brewers",
       "url": "https://www.espn.com/mlb/game/_/gameId/401908004"
+    },
+    "espn401892455": {
+      "name": "ESPN NHL: Winnipeg Jets – Colorado Avalanche",
+      "url": "https://www.espn.com/nhl/game/_/gameId/401892455"
+    },
+    "espn401891830": {
+      "name": "ESPN NHL: Washington Capitals – Pittsburgh Penguins",
+      "url": "https://www.espn.com/nhl/game/_/gameId/401891830"
+    },
+    "espn401908620": {
+      "name": "ESPN NBA: Oklahoma City Thunder – Milwaukee Bucks",
+      "url": "https://www.espn.com/nba/game/_/gameId/401908620"
+    },
+    "espn401907987": {
+      "name": "ESPN MLB: New York Yankees – Tampa Bay Rays",
+      "url": "https://www.espn.com/mlb/game/_/gameId/401907987"
+    },
+    "espn401871066": {
+      "name": "ESPN NCAA: FIU Panthers – New Mexico State Aggies",
+      "url": "https://www.espn.com/college-football/game/_/gameId/401871066"
     }
   },
   "results": [
@@ -986,11 +1006,13 @@
       "odds": 1.24,
       "prob": 0.764,
       "probSrc": "Dimers modell",
-      "status": "pending",
-      "score": "",
+      "status": "won",
+      "score": "1–6, 6–2, 4–6",
       "note": "",
-      "settled": "",
-      "resultSources": []
+      "settled": "2026-10-08",
+      "resultSources": [
+        "te1007"
+      ]
     },
     {
       "id": "2026-10-07|Gauff nyer",
@@ -1022,11 +1044,13 @@
       "odds": 1.32,
       "prob": 0.747,
       "probSrc": "Dimers modell",
-      "status": "pending",
-      "score": "",
+      "status": "won",
+      "score": "2–6, 3–6",
       "note": "",
-      "settled": "",
-      "resultSources": []
+      "settled": "2026-10-08",
+      "resultSources": [
+        "te1007"
+      ]
     },
     {
       "id": "2026-10-08|Avalanche nyer (hosszabbítással együtt)",
@@ -1039,11 +1063,13 @@
       "odds": 1.54,
       "prob": 0.622,
       "probSrc": "piaci, árrés nélkül",
-      "status": "pending",
-      "score": "",
+      "status": "lost",
+      "score": "3–2",
       "note": "",
-      "settled": "",
-      "resultSources": []
+      "settled": "2026-10-08",
+      "resultSources": [
+        "espn401892455"
+      ]
     },
     {
       "id": "2026-10-08|Capitals nyer (hosszabbítással együtt)",
@@ -1056,11 +1082,13 @@
       "odds": 1.59,
       "prob": 0.604,
       "probSrc": "piaci, árrés nélkül",
-      "status": "pending",
-      "score": "",
+      "status": "won",
+      "score": "5–3",
       "note": "",
-      "settled": "",
-      "resultSources": []
+      "settled": "2026-10-08",
+      "resultSources": [
+        "espn401891830"
+      ]
     },
     {
       "id": "2026-10-08|FIU nyer",
@@ -1073,11 +1101,13 @@
       "odds": 1.43,
       "prob": 0.632,
       "probSrc": "ESPN Analytics (FPI)",
-      "status": "pending",
-      "score": "",
+      "status": "won",
+      "score": "22–3",
       "note": "",
-      "settled": "",
-      "resultSources": []
+      "settled": "2026-10-08",
+      "resultSources": [
+        "espn401871066"
+      ]
     },
     {
       "id": "2026-10-08|Thunder nyer",
@@ -1090,11 +1120,13 @@
       "odds": 1.23,
       "prob": 0.782,
       "probSrc": "piaci, árrés nélkül",
-      "status": "pending",
-      "score": "",
+      "status": "lost",
+      "score": "126–128",
       "note": "",
-      "settled": "",
-      "resultSources": []
+      "settled": "2026-10-08",
+      "resultSources": [
+        "espn401908620"
+      ]
     },
     {
       "id": "2026-10-08|Yankees nyer",
@@ -1107,11 +1139,13 @@
       "odds": 1.62,
       "prob": 0.612,
       "probSrc": "ESPN Analytics",
-      "status": "pending",
-      "score": "",
+      "status": "lost",
+      "score": "3–4",
       "note": "",
-      "settled": "",
-      "resultSources": []
+      "settled": "2026-10-08",
+      "resultSources": [
+        "espn401907987"
+      ]
     },
     {
       "id": "2026-10-08|Andrejeva nyer",
