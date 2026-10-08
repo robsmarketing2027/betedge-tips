@@ -1,7 +1,8 @@
 # Daily refresh of the tips page
 
-This file is the brief for the scheduled cloud routine that runs every morning. A human can follow it
-too. The page `index.html` renders whatever the two data files contain; it never needs to change for a
+This file is the brief for the cloud routine "BetEdge tips: refresh (manual)". It has no schedule: the
+owner starts it by hand (claude.ai/code/routines → Run now), on any day, as often as wanted. A human can
+follow it too. The page `index.html` renders whatever the two data files contain; it never needs to change for a
 refresh:
 
 - `tips.json` – today's tips (part B rewrites it);
@@ -23,7 +24,12 @@ development copy).
    independent: commit `results.json` even when part B fails.
 6. Change nothing but `tips.json` and `results.json`. The page and this brief are edited by hand in the
    betedge repo.
-7. Never change a settled result's `odds`, `prob` or `status` to make the record look better. A wrong
+7. **No tips for the past.** Tips are only ever written for events that start after the run. A day on
+   which nobody started a refresh stays without tips; never write a `tips.json` dated earlier than today
+   and never add tips to `results.json` that were not published in a `tips.json` before the event. (The
+   final score would already be known, and the record would be worthless.) Part A catches up on the
+   results of every earlier tip, however many days were skipped.
+8. Never change a settled result's `odds`, `prob` or `status` to make the record look better. A wrong
    settlement is corrected only with a source, and the correction is described in `note`.
 
 ## Procedure
@@ -33,7 +39,8 @@ development copy).
 
 ### Part A – settle earlier tips (`results.json`)
 
-1. **Record.** For every tip in the current `tips.json` (the one about to be replaced), add an entry to
+1. **Record.** For every tip in the current `tips.json` (the one about to be replaced, possibly several
+   days old), add an entry to
    `results` unless one with the same `id` exists. `id` = Budapest date of `start` + `|` + `pick`
    (e.g. `2026-10-06|Svájc nyer`); the same selection published on several days is kept once, with the
    first publication's `tipDate`, `odds`, `prob` and `probSrc`. New entries start as `pending`.
@@ -63,7 +70,8 @@ development copy).
 
 ### Part B – today's tips (`tips.json`)
 
-Skip part B when `tips.json` already has today's `date` (a manual re-run); only part A runs then.
+Skip part B when `tips.json` already has today's `date` (a second run on the same day); only part A
+runs then.
 
 1. Find what is on. Sources that worked (October 2026):
    - Football: ESPN schedule pages (`espn.com/soccer/schedule/_/league/<id>`, show US lines),
@@ -84,7 +92,7 @@ Skip part B when `tips.json` already has today's `date` (a manual re-run); only 
      market → `probSrc: "piaci, árrés nélkül"`;
    - if only the pick's price is known, `p ≈ 0.965 / odds` → `probSrc: "piaci, becsült árrés nélkül"`.
 4. Select about 20 tips:
-   - start time **after 08:00 Budapest today**, preferably today or tomorrow; nothing already started;
+   - start time **at least 30 minutes after the run**, preferably today or tomorrow; nothing already started;
    - estimated probability ≥ 0.58; reference odds ≥ 1.10 where possible (one or two shorter anchors are fine);
    - at most about a third from one sport; prefer events Hungarian books actually offer;
    - rank by probability, highest first; the page re-sorts anyway.

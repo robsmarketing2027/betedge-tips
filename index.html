@@ -173,9 +173,9 @@
 
   <footer>
     <p>
-      A tippeket minden reggel egy automatikus kutatás állítja össze nyilvános forrásokból, és ugyanez a
-      kutatás zárja le a korábbi tippeket a végeredmény forrásával együtt; az oldal megnyitáskor mindig a
-      legfrissebb fájlokat tölti be. Az oldal független a BetEdge táblától: a tippek nem mentek át a BetEdge
+      A tippeket kézzel indított kutatás állítja össze nyilvános forrásokból, és ugyanez a kutatás zárja
+      le a korábbi tippeket a végeredmény forrásával együtt, a kimaradt napokét is; az oldal megnyitáskor
+      mindig a legfrissebb fájlokat tölti be. Utólag, egy már lejátszott napra nem készül tipp. Az oldal független a BetEdge táblától: a tippek nem mentek át a BetEdge
       kapuin (kapu-verzió: nincs), a szorzók tájékoztató referenciaárak, nem a Tippmixpro vagy a Vegas.hu
       árai. Minden esély becslés, a forrása és a dátuma a tippnél látható. A múltbeli eredmény nem ígéret a
       jövőre. A fogadást te teszed meg, saját felelősségre. 18+
@@ -333,7 +333,7 @@ function showTips(data) {
   if (data.date < isoDay(new Date())) {
     $('stale').hidden = false;
     $('stale').textContent = 'Ezek még a ' + dayFmt.format(noon(data.date))
-      + '-i tippek: a mai frissítés még nem futott le. Az elkezdődött események szürkék; fogadás előtt '
+      + '-i tippek: mára még nem indult frissítés. Az elkezdődött események szürkék; fogadás előtt '
       + 'nézd meg a saját oldalad aktuális szorzóját és a friss csapathíreket.';
   }
   $('controls').hidden = false;
@@ -435,10 +435,19 @@ function renderResults() {
     .sort((a, b) => b[1].n - a[1].n || a[0].localeCompare(b[0], 'hu'));
   $('rSports').replaceChildren(...bySport.map(([sp, sum]) => tableRow(sp, sum, s)));
 
-  // Grouped by the day the tip was published, newest first; within a day in start order.
+  // Grouped by the day the tip was published, newest first; within a day in start order. Days without a
+  // refresh between the first and the last one are listed too, so a gap in the record stays visible.
   const days = [...new Set(rows.map((r) => r.tipDate))].sort().reverse();
   const blocks = [];
-  for (const d of days) {
+  for (let i = 0; i < days.length; i++) {
+    const d = days[i];
+    if (i > 0) {
+      for (let g = new Date(noon(days[i - 1]) - 86400000); isoDay(g) > d; g = new Date(g - 86400000)) {
+        const gap = el('div', 'day');
+        gap.append(el('span', null, shortDay.format(g) + ' – nem készült tipp (nem futott frissítés)'));
+        blocks.push(gap);
+      }
+    }
     const dayRows = rows.filter((r) => r.tipDate === d).sort((a, b) => new Date(a.start) - new Date(b.start));
     const sum = summarize(dayRows, s);
     const head = el('div', 'day');
