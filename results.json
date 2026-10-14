@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-08T12:00:00+02:00",
+  "updated": "2026-10-14T15:40:00+02:00",
   "sources": {
     "te1003": {
       "name": "Tennis Explorer, okt. 3.",
@@ -160,6 +160,82 @@
     "te20261008": {
       "name": "Tennis Explorer – 2026. okt. 8.",
       "url": "https://www.tennisexplorer.com/matches/?type=all&year=2026&month=10&day=08"
+    },
+    "espnDalTb": {
+      "name": "ESPN – Cowboys–Buccaneers",
+      "url": "https://www.espn.com/nfl/game/_/gameId/401872980"
+    },
+    "espnLibShsu": {
+      "name": "ESPN – Liberty–Sam Houston",
+      "url": "https://www.espn.com/college-football/game/_/gameId/401870766"
+    },
+    "espnByuIsu": {
+      "name": "ESPN – BYU–Iowa State",
+      "url": "https://www.espn.com/college-football/game/_/gameId/401856826"
+    },
+    "espnSjsuWyo": {
+      "name": "ESPN – San José State–Wyoming",
+      "url": "https://www.espn.com/college-football/game/_/gameId/401864519"
+    },
+    "espnUtsaUsf": {
+      "name": "ESPN – UTSA–South Florida",
+      "url": "https://www.espn.com/college-football/game/_/gameId/401862794"
+    },
+    "espnCarVan": {
+      "name": "ESPN – Hurricanes–Canucks",
+      "url": "https://www.espn.com/nhl/game/_/gameId/401892461"
+    },
+    "espnCgyCol": {
+      "name": "ESPN – Flames–Avalanche",
+      "url": "https://www.espn.com/nhl/game/_/gameId/401892463"
+    },
+    "espnMtlNsh": {
+      "name": "ESPN – Canadiens–Predators",
+      "url": "https://www.espn.com/nhl/game/_/gameId/401892459"
+    },
+    "espnPsvHee": {
+      "name": "ESPN – PSV–Heerenveen",
+      "url": "https://www.espn.com/soccer/match/_/gameId/401875592"
+    },
+    "espnGsKas": {
+      "name": "ESPN – Galatasaray–Kasımpaşa",
+      "url": "https://www.espn.com/soccer/match/_/gameId/401888280"
+    },
+    "espnNacMvv": {
+      "name": "ESPN – NAC–MVV",
+      "url": "https://www.espn.com/soccer/match/_/gameId/401875898"
+    },
+    "espnBvbSvw": {
+      "name": "ESPN – Dortmund–Bremen",
+      "url": "https://www.espn.com/soccer/match/_/gameId/401884781"
+    },
+    "espnAlmEin": {
+      "name": "ESPN – Almere City–FC Eindhoven",
+      "url": "https://www.espn.com/soccer/match/_/gameId/401875904"
+    },
+    "espnNsrDir": {
+      "name": "ESPN – Al Nassr–Al Diriyah",
+      "url": "https://www.espn.com/soccer/match/_/gameId/401900907"
+    },
+    "espnFatAhl": {
+      "name": "ESPN – Al Fateh–Al Ahli",
+      "url": "https://www.espn.com/soccer/match/_/gameId/401900912"
+    },
+    "espnFluCor": {
+      "name": "ESPN – Fluminense–Coritiba",
+      "url": "https://www.espn.com/soccer/match/_/gameId/401841248"
+    },
+    "espnPalBah": {
+      "name": "ESPN – Palmeiras–Bahia",
+      "url": "https://www.espn.com/soccer/match/_/gameId/401841254"
+    },
+    "te20261009": {
+      "name": "Tennis Explorer – 2026. okt. 9.",
+      "url": "https://www.tennisexplorer.com/matches/?type=all&year=2026&month=10&day=09"
+    },
+    "ctDeMinaur": {
+      "name": "Canberra Times (AAP) – de Minaur továbbjutása",
+      "url": "https://www.canberratimes.com.au/story/9365913/demon-gifted-walkover-and-birthday-boy-ben-celebrates/"
     }
   },
   "results": [
@@ -1238,11 +1314,13 @@
       "odds": 1.36,
       "prob": 0.702,
       "probSrc": "Dimers modell",
-      "status": "pending",
-      "score": "",
+      "status": "won",
+      "score": "3–6, 1–6",
       "note": "",
-      "settled": "",
-      "resultSources": []
+      "settled": "2026-10-14",
+      "resultSources": [
+        "te20261008"
+      ]
     },
     {
       "id": "2026-10-08|Andrejeva nyer",
@@ -1255,11 +1333,13 @@
       "odds": 1.3,
       "prob": 0.757,
       "probSrc": "Dimers modell",
-      "status": "pending",
-      "score": "",
-      "note": "A meccs a pekingi programban későbbre került; a kezdési időt az okt. 8-i tippfájlhoz igazítottuk.",
-      "settled": "",
-      "resultSources": []
+      "status": "won",
+      "score": "6–7, 6–7",
+      "note": "",
+      "settled": "2026-10-14",
+      "resultSources": [
+        "te20261008"
+      ]
     },
     {
       "id": "2026-10-09|Liberty nyer",
@@ -1272,11 +1352,13 @@
       "odds": 1.18,
       "prob": 0.824,
       "probSrc": "ESPN Analytics (FPI)",
-      "status": "pending",
-      "score": "",
+      "status": "won",
+      "score": "35–3",
       "note": "",
-      "settled": "",
-      "resultSources": []
+      "settled": "2026-10-14",
+      "resultSources": [
+        "espnLibShsu"
+      ]
     },
     {
       "id": "2026-10-09|Hurricanes nyer (hosszabbítással együtt)",
@@ -1289,11 +1371,13 @@
       "odds": 1.31,
       "prob": 0.734,
       "probSrc": "piaci, árrés nélkül",
-      "status": "pending",
-      "score": "",
+      "status": "won",
+      "score": "7–2",
       "note": "",
-      "settled": "",
-      "resultSources": []
+      "settled": "2026-10-14",
+      "resultSources": [
+        "espnCarVan"
+      ]
     },
     {
       "id": "2026-10-09|Canadiens nyer (hosszabbítással együtt)",
@@ -1306,11 +1390,13 @@
       "odds": 1.54,
       "prob": 0.622,
       "probSrc": "piaci, árrés nélkül",
-      "status": "pending",
-      "score": "",
+      "status": "lost",
+      "score": "2–5",
       "note": "",
-      "settled": "",
-      "resultSources": []
+      "settled": "2026-10-14",
+      "resultSources": [
+        "espnMtlNsh"
+      ]
     },
     {
       "id": "2026-10-09|UTSA nyer",
@@ -1323,11 +1409,13 @@
       "odds": 1.36,
       "prob": 0.614,
       "probSrc": "ESPN Analytics (FPI)",
-      "status": "pending",
-      "score": "",
+      "status": "won",
+      "score": "31–24",
       "note": "",
-      "settled": "",
-      "resultSources": []
+      "settled": "2026-10-14",
+      "resultSources": [
+        "espnUtsaUsf"
+      ]
     },
     {
       "id": "2026-10-09|Cowboys nyer",
@@ -1340,11 +1428,13 @@
       "odds": 1.22,
       "prob": 0.861,
       "probSrc": "ESPN Analytics (FPI)",
-      "status": "pending",
-      "score": "",
+      "status": "lost",
+      "score": "16–24",
       "note": "",
-      "settled": "",
-      "resultSources": []
+      "settled": "2026-10-14",
+      "resultSources": [
+        "espnDalTb"
+      ]
     },
     {
       "id": "2026-10-09|Fluminense nyer",
@@ -1357,11 +1447,13 @@
       "odds": 1.49,
       "prob": 0.624,
       "probSrc": "piaci, árrés nélkül",
-      "status": "pending",
-      "score": "",
+      "status": "won",
+      "score": "4–0",
       "note": "",
-      "settled": "",
-      "resultSources": []
+      "settled": "2026-10-14",
+      "resultSources": [
+        "espnFluCor"
+      ]
     },
     {
       "id": "2026-10-09|Palmeiras nyer",
@@ -1374,11 +1466,13 @@
       "odds": 1.54,
       "prob": 0.61,
       "probSrc": "piaci, árrés nélkül",
-      "status": "pending",
-      "score": "",
+      "status": "won",
+      "score": "1–0",
       "note": "",
-      "settled": "",
-      "resultSources": []
+      "settled": "2026-10-14",
+      "resultSources": [
+        "espnPalBah"
+      ]
     },
     {
       "id": "2026-10-09|Avalanche nyer (hosszabbítással együtt)",
@@ -1391,11 +1485,13 @@
       "odds": 1.42,
       "prob": 0.675,
       "probSrc": "piaci, árrés nélkül",
-      "status": "pending",
-      "score": "",
+      "status": "won",
+      "score": "3–7",
       "note": "",
-      "settled": "",
-      "resultSources": []
+      "settled": "2026-10-14",
+      "resultSources": [
+        "espnCgyCol"
+      ]
     },
     {
       "id": "2026-10-09|de Minaur nyer",
@@ -1408,11 +1504,14 @@
       "odds": 1.29,
       "prob": 0.778,
       "probSrc": "Dimers modell",
-      "status": "pending",
+      "status": "void",
       "score": "",
-      "note": "",
-      "settled": "",
-      "resultSources": []
+      "note": "Molčan visszalépett, de Minaur játék nélkül jutott tovább (walkover), ezért a tipp érvénytelen.",
+      "settled": "2026-10-14",
+      "resultSources": [
+        "te20261009",
+        "ctDeMinaur"
+      ]
     },
     {
       "id": "2026-10-09|Świątek nyer",
@@ -1425,11 +1524,13 @@
       "odds": 1.22,
       "prob": 0.792,
       "probSrc": "Dimers modell",
-      "status": "pending",
-      "score": "",
+      "status": "lost",
+      "score": "7–6, 6–3",
       "note": "",
-      "settled": "",
-      "resultSources": []
+      "settled": "2026-10-14",
+      "resultSources": [
+        "te20261009"
+      ]
     },
     {
       "id": "2026-10-09|Al Ahli nyer",
@@ -1442,11 +1543,13 @@
       "odds": 1.42,
       "prob": 0.654,
       "probSrc": "piaci, árrés nélkül",
-      "status": "pending",
-      "score": "",
+      "status": "won",
+      "score": "0–4",
       "note": "",
-      "settled": "",
-      "resultSources": []
+      "settled": "2026-10-14",
+      "resultSources": [
+        "espnFatAhl"
+      ]
     },
     {
       "id": "2026-10-09|Galatasaray nyer",
@@ -1459,11 +1562,13 @@
       "odds": 1.25,
       "prob": 0.75,
       "probSrc": "piaci, árrés nélkül",
-      "status": "pending",
-      "score": "",
+      "status": "won",
+      "score": "3–1",
       "note": "",
-      "settled": "",
-      "resultSources": []
+      "settled": "2026-10-14",
+      "resultSources": [
+        "espnGsKas"
+      ]
     },
     {
       "id": "2026-10-09|PSV nyer",
@@ -1476,11 +1581,13 @@
       "odds": 1.24,
       "prob": 0.751,
       "probSrc": "piaci, árrés nélkül",
-      "status": "pending",
-      "score": "",
+      "status": "won",
+      "score": "2–0",
       "note": "",
-      "settled": "",
-      "resultSources": []
+      "settled": "2026-10-14",
+      "resultSources": [
+        "espnPsvHee"
+      ]
     },
     {
       "id": "2026-10-09|NAC nyer",
@@ -1493,11 +1600,13 @@
       "odds": 1.34,
       "prob": 0.697,
       "probSrc": "piaci, árrés nélkül",
-      "status": "pending",
-      "score": "",
+      "status": "won",
+      "score": "1–0",
       "note": "",
-      "settled": "",
-      "resultSources": []
+      "settled": "2026-10-14",
+      "resultSources": [
+        "espnNacMvv"
+      ]
     },
     {
       "id": "2026-10-09|Almere City nyer",
@@ -1510,11 +1619,13 @@
       "odds": 1.38,
       "prob": 0.67,
       "probSrc": "piaci, árrés nélkül",
-      "status": "pending",
-      "score": "",
+      "status": "won",
+      "score": "3–0",
       "note": "",
-      "settled": "",
-      "resultSources": []
+      "settled": "2026-10-14",
+      "resultSources": [
+        "espnAlmEin"
+      ]
     },
     {
       "id": "2026-10-09|Al Nassr nyer",
@@ -1527,11 +1638,13 @@
       "odds": 1.4,
       "prob": 0.662,
       "probSrc": "piaci, árrés nélkül",
-      "status": "pending",
-      "score": "",
+      "status": "won",
+      "score": "3–0",
       "note": "",
-      "settled": "",
-      "resultSources": []
+      "settled": "2026-10-14",
+      "resultSources": [
+        "espnNsrDir"
+      ]
     },
     {
       "id": "2026-10-09|Dortmund nyer",
@@ -1544,11 +1657,13 @@
       "odds": 1.34,
       "prob": 0.69,
       "probSrc": "piaci, árrés nélkül",
-      "status": "pending",
-      "score": "",
-      "note": "",
-      "settled": "",
-      "resultSources": []
+      "status": "lost",
+      "score": "2–2",
+      "note": "Döntetlen lett, ami 1X2-ben vesztes.",
+      "settled": "2026-10-14",
+      "resultSources": [
+        "espnBvbSvw"
+      ]
     },
     {
       "id": "2026-10-10|San José State nyer",
@@ -1561,11 +1676,13 @@
       "odds": 1.42,
       "prob": 0.744,
       "probSrc": "ESPN FPI",
-      "status": "pending",
-      "score": "",
-      "note": "",
-      "settled": "",
-      "resultSources": []
+      "status": "lost",
+      "score": "13–16 (h.u.)",
+      "note": "A Wyoming hosszabbításban nyert.",
+      "settled": "2026-10-14",
+      "resultSources": [
+        "espnSjsuWyo"
+      ]
     },
     {
       "id": "2026-10-10|BYU nyer",
@@ -1578,11 +1695,13 @@
       "odds": 1.24,
       "prob": 0.838,
       "probSrc": "ESPN FPI",
-      "status": "pending",
-      "score": "",
+      "status": "won",
+      "score": "24–10",
       "note": "",
-      "settled": "",
-      "resultSources": []
+      "settled": "2026-10-14",
+      "resultSources": [
+        "espnByuIsu"
+      ]
     }
   ]
 }
